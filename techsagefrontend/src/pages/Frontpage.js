@@ -5,8 +5,29 @@ import arduino from './firstyou.jpg'
 export default function FrontPage() {
 
     return (
-        <div className="relative top-40">
-            <div className="carousel w-[90%] mx-auto flex rounded-full h-[350px]   border-[2px] shadow-2xl ">
+        <div className="relative ">
+            
+
+            {/* from here written content of the page */}
+
+            <div className=" min-h-screen flex items-center justify-center">
+                <div className="text-center">
+                    <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
+                        Building Tomorrow's Innovators
+                    </h1>
+                    <h2 className="text-3xl md:text-4xl font-semibold text-gray-700">
+                        Today
+                    </h2>
+                    <p className="text-lg md:text-xl text-gray-500 mt-6">
+                        Learn Robotics & AI from IIT & RGIPT Engineers for grades 7-12
+                    </p>
+                    {/* button for contact to our sevices */}
+
+                    <button className=" rounded-full mt-12 text-white h-[50px] w-[40%] text-[20px]  bg-[#3084F2] hover:bg-sky-500 hover:scale-90">Get Your First Free Workshop</button>
+
+                </div>
+            </div>
+            <div className="carousel w-[100%] mx-auto flex  min-h-screen   border-[2px] shadow-2xl ">
                 <div id="slide1" className="carousel-item relative w-full">
                     <iframe
                         width="1000"
@@ -75,26 +96,6 @@ export default function FrontPage() {
                 </div>
             </div>
 
-
-            {/* from here written content of the page */}
-
-            <div className=" min-h-screen flex items-center justify-center">
-                <div className="text-center">
-                    <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
-                        Building Tomorrow's Innovators
-                    </h1>
-                    <h2 className="text-3xl md:text-4xl font-semibold text-gray-700">
-                        Today
-                    </h2>
-                    <p className="text-lg md:text-xl text-gray-500 mt-6">
-                        Learn Robotics & AI from IIT & RGIPT Engineers for grades 7-12
-                    </p>
-                    {/* button for contact to our sevices */}
-
-                    <button className=" rounded-full mt-12 text-white h-[50px] w-[40%] text-[20px]  bg-[#3084F2] hover:bg-sky-500 hover:scale-90">Get Your First Free Workshop</button>
-
-                </div>
-            </div>
         </div>
     )
 }

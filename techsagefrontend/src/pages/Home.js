@@ -5,6 +5,7 @@ import Features from "./Features";
 import Newfeatures from "./NewFeatures";
 import Footer from "./Footer";
 import Started from "./Started";
+import Techsageltd from "./Techsageltd";
 
 export default function Home(){
 
@@ -15,6 +16,7 @@ export default function Home(){
             <Features></Features>
             <Newfeatures></Newfeatures>
             <Started></Started>
+            <Techsageltd></Techsageltd>
             <Footer></Footer>
             
         </div>

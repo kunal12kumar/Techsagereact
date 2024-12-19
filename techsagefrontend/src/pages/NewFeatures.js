@@ -5,6 +5,10 @@ import ai from "./Ai.png";
 import code from './code.png';
 import support from './support.png';
 import collaboration from './collaboration.png';
+import bluewhite from "./bluewhite.jpg";
+import skywhite from "./skywhite.jpg";
+import bubbles from "./bubbles.jpg";
+import bluclouds from "./bluecloud.jpg";
 
 export default function Newfeatures() {
 
@@ -27,7 +31,8 @@ export default function Newfeatures() {
             
             <div className="w-[70%] h-auto grid grid-cols-2 gap-y-12 justify-items-center  mx-auto">
 
-                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center  gap-[30px] ">
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center  gap-[30px] "
+                style={{ backgroundImage: `url(${bubbles})` }}>
                     <img src={freeicon} className="pb-2"></img>
 
                     <h1 className="text-2xl font-semibold">Free Workshop</h1>
@@ -37,7 +42,8 @@ export default function Newfeatures() {
                 </div>
 
 
-                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center  gap-[30px] ">
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center gap-[30px] "
+                style={{ backgroundImage: `url(${bubbles})` }}>
                     <img src={robot} className="pb-2"></img>
 
                     <h1 className="text-2xl font-semibold">Hands-on robotics</h1>
@@ -47,7 +53,8 @@ export default function Newfeatures() {
                 </div>
 
 
-                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center  gap-[30px] ">
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center gap-[30px] "
+                style={{ backgroundImage: `url(${bubbles})` }}>
                     <img src={ai} className="pb-2"></img>
 
                     <h1 className="text-2xl font-semibold">Artificial intelligence</h1>
@@ -57,7 +64,8 @@ export default function Newfeatures() {
                 </div>
 
 
-                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center  gap-[30px] ">
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center  gap-[30px] "
+                style={{ backgroundImage: `url(${bubbles})` }}>
                     <img src={code} className="pb-2"></img>
 
                     <h1 className="text-2xl font-semibold">Well documented code</h1>
@@ -66,7 +74,8 @@ export default function Newfeatures() {
 
                 </div>
 
-                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center  gap-[30px] ">
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center gap-[30px] "
+                style={{ backgroundImage: `url(${bubbles})` }}>
                     <img src={support} className="pb-2"></img>
 
                     <h1 className="text-2xl font-semibold">24/7 technical support</h1>
@@ -76,7 +85,8 @@ export default function Newfeatures() {
                 </div>
 
 
-                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center  gap-[30px] ">
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center  gap-[30px] "
+                style={{ backgroundImage: `url(${bubbles})` }}>
                     <img src={collaboration} className="pb-2"></img>
 
                     <h1 className="text-2xl font-semibold">Collaboration</h1>

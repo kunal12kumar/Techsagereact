@@ -1,6 +1,10 @@
 // In this we are creating animated files and other thing
 
 import React from "react";
+import bluewhite from "./bluewhite.jpg";
+import skywhite from "./skywhite.jpg";
+import bubbles from "./bubbles.jpg";
+import bluclouds from "./bluecloud.jpg";
 
 export default function Features() {
 
@@ -8,7 +12,9 @@ export default function Features() {
 
     return (
         <div className="min-h-screen mt-52 ">
-            <div className=" w-[65%] h-[400px] overflow-hidden  bg-gradient-to-r from-cyan-500 to-blue-500 rounded-badge mx-auto border-[8px] border-[white]">
+            <div className=" w-[65%] h-[400px] overflow-hidden  bg-gradient-to-r from-cyan-500 to-blue-500 rounded-badge mx-auto border-[8px] bg-cover bg-center border-[white]"
+            style={{ backgroundImage: `url(${bluclouds})` }}
+            >
 
                 {/* now to create what we will offer section */}
                 <div className="border-[4px] flex justify-center items-center border-[white] rounded-badge bg-[#2ea0f2] m-10 mx-auto h-[55px]  w-[35%]">
