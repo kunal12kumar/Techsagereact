@@ -22,22 +22,4 @@ code {
 
 /* creating animation  */
 
-@layer utilities {
-  @keyframes slideIn {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    50% {
-      transform: translateX(0%);
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(10px);
-    }
-  }
 
-  .animate-slide-in {
-    animation: slideIn 1s forwards;
-  }
-}

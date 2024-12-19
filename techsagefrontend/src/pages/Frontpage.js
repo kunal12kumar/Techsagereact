@@ -6,7 +6,7 @@ export default function FrontPage() {
 
     return (
         <div className="relative top-40">
-            <div className="carousel w-[90%] mx-auto flex rounded-full h-[250px]  border-[2px] shadow-2xl ">
+            <div className="carousel w-[90%] mx-auto flex rounded-full h-[350px]   border-[2px] shadow-2xl ">
                 <div id="slide1" className="carousel-item relative w-full">
                     <iframe
                         width="1000"
