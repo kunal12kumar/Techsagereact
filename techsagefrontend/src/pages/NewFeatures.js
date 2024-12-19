@@ -1,68 +1,93 @@
 import React from "react";
+import freeicon from "./freeicon";
+import robot from "./robot.gif";
+import ai from "./Ai.png";
+import code from './code.png';
+import support from './support.png';
+import collaboration from './collaboration.png';
 
-export default function Newfeatures(){
+export default function Newfeatures() {
 
-    return(
-        <div className="bg-gray-50 py-16">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold">Why choose us?</h2>
-        <p className="text-gray-600 mt-2">
-          Start your robotics journey with our interactive workshop
-        </p>
-      </div>
-      <div className="flex flex-col md:flex-row justify-center gap-8">
-        {/* Free Workshop Card */}
-        <div className="bg-white shadow-md rounded-lg p-8 flex-1 text-center">
-          <div className="flex justify-center mb-6">
-            <div className="bg-blue-500 text-white rounded-full p-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="2"
-                stroke="currentColor"
-                className="w-8 h-8"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 6v12m6-6H6"
-                />
-              </svg>
+    return (
+        <div className=" py-16 mih-h-screen">
+
+            {/* section for new features */}
+
+            <div className=" w-[30%] h-[60px] flex justify-center items-center border-[3px ] mx-auto border-white bg-slate-300 rounded-full  ">
+                <h1 className="text-2xl text-center"> Features</h1>
+                
+
             </div>
-          </div>
-          <h3 className="text-lg font-semibold">Free workshop</h3>
-          <p className="text-gray-600 mt-2">
-            Helping focusing on what truly matters first.
-          </p>
-        </div>
-
-        {/* Hands-on Robotics Card */}
-        <div className="bg-white shadow-md rounded-lg p-8 flex-1 text-center">
-          <div className="flex justify-center mb-6">
-            <div className="bg-blue-500 text-white rounded-full p-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="2"
-                stroke="currentColor"
-                className="w-8 h-8"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3 10h18M9 21l6-18"
-                />
-              </svg>
+            <div className="text-center m-12">
+                <h2 className="text-3xl font-bold">Why choose us?</h2>
+                <p className="text-gray-600 mt-2">
+                    Start your robotics journey with our interactive workshop
+                </p>
             </div>
-          </div>
-          <h3 className="text-lg font-semibold">Hands-on robotics</h3>
-          <p className="text-gray-600 mt-2">
-            Students will make real working robots.
-          </p>
+            
+            <div className="w-[70%] h-auto grid grid-cols-2 gap-y-12 justify-items-center  mx-auto">
+
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center  gap-[30px] ">
+                    <img src={freeicon} className="pb-2"></img>
+
+                    <h1 className="text-2xl font-semibold">Free Workshop</h1>
+
+                    <h1 className="text-2xl font-semibold text-[#594949]">Helping Focusing </h1>
+
+                </div>
+
+
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center  gap-[30px] ">
+                    <img src={robot} className="pb-2"></img>
+
+                    <h1 className="text-2xl font-semibold">Hands-on robotics</h1>
+
+                    <h1 className="text-2xl font-semibold text-center text-[#594949]">Students will make real working robots </h1>
+
+                </div>
+
+
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center  gap-[30px] ">
+                    <img src={ai} className="pb-2"></img>
+
+                    <h1 className="text-2xl font-semibold">Artificial intelligence</h1>
+
+                    <h1 className="text-2xl text-center font-semibold text-[#594949]">Learn AI from real world problems </h1>
+
+                </div>
+
+
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center  gap-[30px] ">
+                    <img src={code} className="pb-2"></img>
+
+                    <h1 className="text-2xl font-semibold">Well documented code</h1>
+
+                    <h1 className="text-xl font-semibold text-center text-[#594949]">Get access to all the codes in our documentation anytime </h1>
+
+                </div>
+
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center  gap-[30px] ">
+                    <img src={support} className="pb-2"></img>
+
+                    <h1 className="text-2xl font-semibold">24/7 technical support</h1>
+
+                    <h1 className="text-2xl text-center font-semibold text-[#594949]">Get technical help anytime anwhere </h1>
+
+                </div>
+
+
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center  gap-[30px] ">
+                    <img src={collaboration} className="pb-2"></img>
+
+                    <h1 className="text-2xl font-semibold">Collaboration</h1>
+
+                    <h1 className="text-xl font-semibold text-center text-[#594949]">Students will learn collaborative teamplay by making projects </h1>
+
+                </div>
+
+
+
+            </div>
         </div>
-      </div>
-    </div>
     )
 }
