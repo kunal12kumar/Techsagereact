@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "\"this is the backend of techsage\"",
   "main": "index.js",
+  "type": "module",
+  "proxy": "http://localhost:8000",
   "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kunal12kumar/TECHSAGE.git"
+    "url": "git+https://github.com/kunal12kumar/Techsagereact.git"
   },
   "author": "Kunal kumar",
   "license": "ISC",
@@ -17,7 +21,13 @@
   },
   "homepage": "https://github.com/kunal12kumar/TECHSAGE#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "nodemon": "^3.1.9"
+    "mongobd": "^0.0.1-security.0",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.2",
+    "nodemon": "^3.1.9",
+    "zod": "^3.24.1"
   }
 }

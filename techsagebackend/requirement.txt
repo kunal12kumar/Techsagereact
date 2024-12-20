@@ -1,2 +1,6 @@
 express;
 nodemon;
+zod;
+CORS;
+mongoose;
+mongodb;
