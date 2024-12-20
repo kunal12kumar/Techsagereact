@@ -28,7 +28,9 @@ module.exports = {
             transform: "translateX(100%)",  // End in the original position
             opacity: "1",  // Keep visible at the end
           },
+         
         },
+      
 
         slideInRight: {
           "0%": {
@@ -49,8 +51,8 @@ module.exports = {
 
       },
       animation: {
-        slideInLeft: "slideInLeft 9s  forwards ease-in-out infinite ",
-        slideInRight:"slideInRight 9s ease-in-out forwards infinite ",  // Fixed animation without infinite loop
+        slideInLeft: "slideInLeft 25s  forwards ease-in-out infinite ",
+        slideInRight:"slideInRight 25s ease-in-out forwards infinite ",  // Fixed animation without infinite loop
       },
 
       
