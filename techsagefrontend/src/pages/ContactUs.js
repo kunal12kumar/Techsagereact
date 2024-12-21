@@ -5,30 +5,94 @@
 
 
 import React, { useState } from "react";
+import axios from "axios";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+
 
 
 
 export default function ContactUs() {
 
-    // const [text, setText] = useState
+    // to udate the all data 
+    const [contactusdetails, setcontactusdetails] = useState(
+        {
+            name: '',
+            email: '',
+            mobileno: '',
+            query: ''
+        }
+    );
 
-    // const handleChange = (e) => {
-    //     setText(e.target.value);
-    // };
+    // by this function we are updating our data by each later
+    const updatedata = (event) => {
+        let olddata = { ...contactusdetails };
+        let inputname = event.target.name;
+        let inputvalue = event.target.value;
+        olddata[inputname] = inputvalue;
+        setcontactusdetails(olddata);
+        console.log(olddata)
+
+    }
+
+    // now checking for whether use is already verified or not 
+    const handelSubmit = async (event) => {
+        event.preventDefault();
+
+        try {
+
+            const response = await axios.post('http://localhost:8000/api/Rcontactus/contactussave', {
+                name: contactusdetails.name,
+                email: contactusdetails.email,
+                mobileno: contactusdetails.mobileno,
+                query: contactusdetails.query
+            });
+            console.log(response);
+
+            if (response.status === 200) {
+                toast.success(response.data.message);
+            }
+
+            setcontactusdetails(
+                {
+                    name: '',
+                    email: '',
+                    mobileno: '',
+                    query: ''
+                }
+            )
+
+        } catch (error) {
+
+
+            toast.error(error.response?.data?.message || 'Failed to save data');
+            console.log(error);
+
+        }
+
+    }
+
+
+
+
 
     return (
 
         <div className="flex justify-center items-center min-h-screen bg-gray-100">
+            <ToastContainer></ToastContainer>
             <div className="bg-white p-6 rounded-lg shadow-lg w-96">
                 <h2 className="text-2xl font-semibold text-gray-800 text-center mb-4">Contact  Us</h2>
-                <form>
+                <form onSubmit={handelSubmit}>
                     <div className="mb-4">
                         <label htmlFor="fullName" className="block text-sm font-medium text-gray-600 mb-1">
                             Name
                         </label>
                         <input
+                            onChange={updatedata}
+
+                            name="name"
+                            value={contactusdetails.name}
                             type="text"
-                            id="Name"
                             placeholder="John Doe"
                             className="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
                         />
@@ -38,6 +102,9 @@ export default function ContactUs() {
                             Email Address
                         </label>
                         <input
+                            onChange={updatedata}
+                            name="email"
+                            value={contactusdetails.email}
                             type="email"
                             id="email"
                             placeholder="johndoe@gmail.com"
@@ -49,6 +116,9 @@ export default function ContactUs() {
                             Mobile No.
                         </label>
                         <input
+                            onChange={updatedata}
+                            name="mobileno"
+                            value={contactusdetails.mobileno}
                             type="MobileNo"
                             id="MobileNo."
                             placeholder="MobileNo."
@@ -58,10 +128,12 @@ export default function ContactUs() {
                     <div className="w-full max-w-lg mb-4 bg-white p-4 rounded-lg shadow-lg">
                         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Write Your Text</h2>
                         <textarea
+                            onChange={updatedata}
                             type="text"
-                            // value={text}
-                            // onChange={handleChange}
-                            
+                            name="query"
+                            value={contactusdetails.query}
+
+
                             placeholder="Start typing here..."
                             className="w-full p-4 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
                         ></textarea>

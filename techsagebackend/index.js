@@ -5,6 +5,7 @@ import bodyParser from 'body-parser';
 import dbconnect from "./lib/dbconnect.js";
 import signuprouter from "./routes/Rsignupuser.js";
 import verifycoderouter from "./routes/Rverifycode.js";
+import contactusrouter from "./routes/Rcontactus.js";
 
 
 
@@ -34,6 +35,7 @@ server.get('/', (req, res) => {
 
 server.use('/api/Rsignupuser',signuprouter);
 server.use('/api/Rverifycode',verifycoderouter);
+server.use('/api/Rcontactus',contactusrouter);
 
 // Use a different port if 8000 is unavailable
 const port = process.env.PORT || 3000; // Default to port 3000 if 8000 is unavailable
