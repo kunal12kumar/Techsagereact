@@ -3,7 +3,9 @@ import User from "../models/user.js";
 export const Verifycode = async (req, res) => {
 
     try {
-        const { username, verifycode } = await req.query
+        const { username, verifycode } = await req.body
+        console.log(username);
+        console.log(verifycode);
         const decodedUsername = decodeURIComponent(username);
         const user = await User.findOne({ username: decodedUsername });
         console.log(user);

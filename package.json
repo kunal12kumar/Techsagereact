@@ -3,6 +3,7 @@
     "@react-email/components": "^0.0.31",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "react-toastify": "^11.0.2"
   }
 }

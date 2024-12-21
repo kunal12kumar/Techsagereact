@@ -3,4 +3,6 @@ react-dom;
 tailwind-css;
 shadcn;
 react-dom;
-react-router-dom
+react-router-dom;
+react-toastify;
+axios;

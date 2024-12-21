@@ -7,6 +7,10 @@ export const UserSignup = async (req, res) => {
 
     try {
         const { username, email, password, mobileno } = req.body;
+        console.log(username)
+        console.log(email)
+        console.log(password)
+        console.log(mobileno)
 
         const checkusername = await User.findOne({ username, isVarified: true });
 
@@ -87,23 +91,19 @@ export const UserSignup = async (req, res) => {
 
         if (!verificationResponse.success) {
 
-            return Response.json({
+            return res.status(400).json({
                 success: false,
                 message: (verificationResponse.message),
 
-            },
-                {
-                    status: 505
-                })
+            })
         } else {
             console.log("Email sent successfully ")
 
-            return Response.json({
+            return res.status(200).json({
                 success: true,
                 message: ("Otp sent successfully")
 
-            },
-                { status: 200 })
+        })
         }
 
 
@@ -117,10 +117,7 @@ export const UserSignup = async (req, res) => {
             success: false,
             message: " Sign up failed ",
             error
-        },
-            {
-                status: 404
-            })
+        })
 
 
 

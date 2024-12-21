@@ -32,8 +32,8 @@ server.get('/', (req, res) => {
 
 // now inroducing the middleware in between 
 
-server.use('/api/Ruser',signuprouter);
-server.use('/api/Ruser',verifycoderouter);
+server.use('/api/Rsignupuser',signuprouter);
+server.use('/api/Rverifycode',verifycoderouter);
 
 // Use a different port if 8000 is unavailable
 const port = process.env.PORT || 3000; // Default to port 3000 if 8000 is unavailable
