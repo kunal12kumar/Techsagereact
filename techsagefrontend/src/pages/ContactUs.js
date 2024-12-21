@@ -78,7 +78,7 @@ export default function ContactUs() {
 
     return (
 
-        <div className="flex justify-center items-center min-h-screen bg-gray-100">
+        <div className="flex font-poppins justify-center items-center min-h-screen bg-gray-100">
             <ToastContainer></ToastContainer>
             <div className="bg-white p-6 rounded-lg shadow-lg w-96">
                 <h2 className="text-2xl font-semibold text-gray-800 text-center mb-4">Contact  Us</h2>
@@ -145,8 +145,8 @@ export default function ContactUs() {
                     <button
                         type="submit"
                         className="w-full flex justify-center items-center px-4 py-2 bg-red-500 text-white font-semibold rounded-full shadow-lg hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400"
-                    >
-                        <svg
+                    > Submit
+                        {/* <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -155,7 +155,7 @@ export default function ContactUs() {
                             className="w-5 h-5"
                         >
                             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-12" />
-                        </svg>
+                        </svg> */}
                     </button>
                 </form>
 

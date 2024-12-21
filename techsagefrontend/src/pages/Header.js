@@ -13,7 +13,7 @@ export default function Header() {
                 <h1 className="text-white text-center px-4">logo</h1>
             </div>
             <div className="flex-1">
-                <a className="btn btn-ghost from-accent-content font-Instrument text-white text-2xl">techsage</a>
+                <a className="btn btn-ghost font-roboto from-accent-content  text-white text-2xl">techsage</a>
             </div>
             <div className="flex gap-6 justify-between">
                 <div className="dropdown dropdown-end">
@@ -56,7 +56,7 @@ export default function Header() {
                     </div>
                 </div>
                 <div className="dropdown dropdown-end">
-                    <div tabIndex={0} role="button" className="btn btn-md w-[90px] rounded-full ">
+                    <div tabIndex={0} role="button" className="btn font-poppins btn-md w-[90px] rounded-full ">
                         {/* <div className="w-4 rounded-full">
                             <img
                                 alt="Tailwind CSS Navbar component"

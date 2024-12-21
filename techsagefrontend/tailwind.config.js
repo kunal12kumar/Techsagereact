@@ -7,8 +7,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Instrument: ['Instrument Sans', 'serif'],
-        poppins:['Poppins', 'serif'] // Add your custom font here
+        roboto: ['Roboto', 'sans-serif'] ,// Add your custom font here
+        lato: ['Lato', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif']
+
       },
 
       // creating animation

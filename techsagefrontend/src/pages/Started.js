@@ -11,7 +11,7 @@ import bluclouds from "./bluecloud.jpg";
 export default function Started() {
 
     return (
-        <div className=" bg-cover bg-center  min-h-screen border-[5px] gap-10 border-white rounded-[34px] mb-20 w-[70%] flex flex-col mx-auto justify-center items-center ]"
+        <div className=" bg-cover bg-center font-poppins min-h-screen border-[5px] gap-10 border-white rounded-[34px] mb-20 w-[70%] flex flex-col mx-auto justify-center items-center ]"
         style={{ backgroundImage: `url(${skywhite})` }}>
             <h1 className="text-5xl font-semibold">Get Started With Techsage</h1>
 

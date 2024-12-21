@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function  Techsageltd  () {
   return (
-    <div className="flex flex-col items-center justify-center py-10 border-t-2 border-white text-gray-800">
+    <div className="flex flex-col font-roboto items-center justify-center py-10 border-t-2 border-white text-gray-800">
       <div className="text-center">
         {/* Logo */}
        

@@ -14,18 +14,18 @@ export default function FrontPage() {
 
             <div className=" min-h-screen flex items-center justify-center">
                 <div className="text-center">
-                    <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
+                    <h1 className="text-5xl md:text-6xl font-bold font-poppins text-gray-900 mb-4">
                         Building Tomorrow's Innovators
                     </h1>
-                    <h2 className="text-3xl md:text-4xl font-semibold text-gray-700">
+                    <h2 className="text-3xl md:text-4xl font-semibold font-poppins text-gray-700">
                         Today
                     </h2>
-                    <p className="text-lg md:text-xl text-gray-500 mt-6">
+                    <p className="text-lg md:text-xl font-poppins text-gray-500 mt-6">
                         Learn Robotics & AI from IIT & RGIPT Engineers for grades 7-12
                     </p>
                     {/* button for contact to our sevices */}
 
-                    <Link to={'/contactus'}><button className=" rounded-full mt-12 text-white h-[50px] w-[40%] text-[20px]  bg-[#3084F2] hover:bg-sky-500 hover:scale-90">Get Your First Free Workshop</button></Link>
+                    <Link to={'/contactus'}><button className=" rounded-full mt-12 text-white h-[50px] w-[40%] text-[20px]  font-poppins bg-[#3084F2] hover:bg-sky-500 hover:scale-90">Get Your First Free Workshop</button></Link>
 
                 </div>
             </div>

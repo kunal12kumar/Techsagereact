@@ -8,7 +8,7 @@ export default function Footer() {
 
     return (
         <footer className=" border-t-2 border-white py-8">
-            <div className="container mx-auto gap-y-8 px-4 mb-8 flex flex-wrap justify-between items-center">
+            <div className="container font-lato mx-auto gap-y-8 px-4 mb-8 flex flex-wrap justify-between items-center">
                 {/* Email Section */}
                 <div className="flex items-center bg-white  border-[2px] border-white w-[250px] h-[40px] rounded-badge mb-4 md:mb-0">
                     <a

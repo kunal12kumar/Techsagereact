@@ -19,16 +19,16 @@ export default function Features() {
 
                 {/* now to create what we will offer section */}
                 <div className="border-[4px] flex justify-center items-center border-[white] rounded-badge bg-[#2ea0f2] m-10 mx-auto h-[55px]  w-[35%]">
-                    <h1 className="text-xl">What we will offer</h1>
+                    <h1 className="text-xl font-roboto">What we will offer</h1>
 
                 </div>
 
                 <div className="mx-auto flex justify-center  ">
-                    <h1 className="font-serif text-4xl"> What Skills Your Kid will learn</h1>
+                    <h1 className=" text-4xl font-serif"> What Skills Your Kid will learn</h1>
                 </div>
 
                 {/* for skills */}
-                <div className="grid   grid-cols-3 gap-5 p-4 animate-slideInLeft">
+                <div className="grid font-roboto  grid-cols-3 gap-5 p-4 animate-slideInLeft">
 
 
 
@@ -37,13 +37,13 @@ export default function Features() {
                     <h1 className="bg-white border-2 hover:scale-90 hover:bg-blue-400 border-gray-200 rounded-3xl px-6 py-3 shadow-md text-gray-800 font-semibold  ">Artificial Intelligience</h1>
 
                 </div>
-                <div className="grid  grid-cols-3 gap-5 p-4 animate-slideInRight">
+                <div className="grid  font-poppins grid-cols-3 gap-5 p-4 animate-slideInRight">
 
 
 
                     <h1 className="bg-white border-2 hover:scale-90 hover:bg-blue-400 border-gray-200 rounded-3xl px-6 py-3 shadow-md text-gray-800 font-semibold text-lg ">Arduino </h1>
                     <h1 className="bg-white border-2 hover:scale-90 hover:bg-blue-400 border-gray-200 rounded-3xl px-6 py-3 shadow-md text-gray-800 font-semibold text-lg ">Coding Skills</h1>
-                    <h1 className="bg-white border-2 hover:scale-90 hover:bg-blue-400 border-gray-200 rounded-3xl px-6 py-3 shadow-md text-gray-800 font-semibold  ">Working with Robots</h1>
+                    <h1 className="bg-white border-2 hover:scale-90 hover:bg-blue-400 border-gray-200 rounded-3xl px-6 py-3 shadow-md text-gray-800   ">Working with Robots</h1>
 
                 </div>
 
@@ -55,7 +55,7 @@ export default function Features() {
 
             </div>
 
-            <Link to={'/contactus'}><button className=" rounded-full mt-12 mx-auto items-center justify-center flex text-white h-[50px] w-[40%] text-[20px]  bg-[#3084F2] hover:bg-sky-500 hover:scale-90">Get Your First Free Workshop</button></Link>
+            <Link to={'/contactus'}><button className=" rounded-full mt-12 mx-auto items-center justify-center flex text-white h-[50px] w-[40%] text-[20px]  bg-[#3084F2] hover:bg-sky-500 hover:scale-90 font-poppins">Get Your First Free Workshop</button></Link>
 
 
 
