@@ -4,3 +4,5 @@ zod;
 CORS;
 mongoose;
 mongodb;
+bcryptjs;
+resend;
