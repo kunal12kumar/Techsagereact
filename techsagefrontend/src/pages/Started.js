@@ -1,5 +1,6 @@
 // in this Cod with Started code
 import React from "react";
+import { Link } from "react-router-dom";
 import correct from "./correct-30.png";
 import bluewhite from "./bluewhite.jpg";
 import skywhite from "./skywhite.jpg";
@@ -36,7 +37,7 @@ export default function Started() {
                 </div>
             </div>
 
-            <button className="flex border-[3px] mt-12 font-semibold text-2xl hover:scale-95 w-[300px] h-[60px] bg-[#2874f7] border-[white] rounded-full justify-center items-center">Get Started Now</button>
+            <Link to={'/contactus'}><button className="flex border-[3px] mt-12 font-semibold text-2xl hover:scale-95 w-[300px] h-[60px] bg-[#2874f7] border-[white] rounded-full justify-center items-center">Get Started Now</button></Link>
 
         </div>
     )

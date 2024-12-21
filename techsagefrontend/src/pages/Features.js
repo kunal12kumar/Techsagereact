@@ -1,6 +1,7 @@
 // In this we are creating animated files and other thing
 
 import React from "react";
+import { Link } from "react-router-dom";
 import bluewhite from "./bluewhite.jpg";
 import skywhite from "./skywhite.jpg";
 import bubbles from "./bubbles.jpg";
@@ -54,7 +55,7 @@ export default function Features() {
 
             </div>
 
-            <button className=" rounded-full mt-12 mx-auto items-center justify-center flex text-white h-[50px] w-[40%] text-[20px]  bg-[#3084F2] hover:bg-sky-500 hover:scale-90">Get Your First Free Workshop</button>
+            <Link to={'/contactus'}><button className=" rounded-full mt-12 mx-auto items-center justify-center flex text-white h-[50px] w-[40%] text-[20px]  bg-[#3084F2] hover:bg-sky-500 hover:scale-90">Get Your First Free Workshop</button></Link>
 
 
 

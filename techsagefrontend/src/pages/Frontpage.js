@@ -25,7 +25,7 @@ export default function FrontPage() {
                     </p>
                     {/* button for contact to our sevices */}
 
-                    <button className=" rounded-full mt-12 text-white h-[50px] w-[40%] text-[20px]  bg-[#3084F2] hover:bg-sky-500 hover:scale-90">Get Your First Free Workshop</button>
+                    <Link to={'/contactus'}><button className=" rounded-full mt-12 text-white h-[50px] w-[40%] text-[20px]  bg-[#3084F2] hover:bg-sky-500 hover:scale-90">Get Your First Free Workshop</button></Link>
 
                 </div>
             </div>
