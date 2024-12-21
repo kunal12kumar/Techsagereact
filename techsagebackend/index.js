@@ -3,7 +3,8 @@ import cors from "cors";
 import 'dotenv/config';
 import bodyParser from 'body-parser';
 import dbconnect from "./lib/dbconnect.js";
-import router from "./routes/Ruser.js"
+import signuprouter from "./routes/Rsignupuser.js";
+import verifycoderouter from "./routes/Rverifycode.js";
 
 
 
@@ -31,7 +32,8 @@ server.get('/', (req, res) => {
 
 // now inroducing the middleware in between 
 
-server.use('/api/Ruser',router);
+server.use('/api/Ruser',signuprouter);
+server.use('/api/Ruser',verifycoderouter);
 
 // Use a different port if 8000 is unavailable
 const port = process.env.PORT || 3000; // Default to port 3000 if 8000 is unavailable
