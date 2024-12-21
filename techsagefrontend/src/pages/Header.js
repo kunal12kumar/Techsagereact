@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Signup from "./Signup";
+
 
 export default function Header() {
 
@@ -40,16 +43,16 @@ export default function Header() {
                         tabIndex={0}
                         className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
                         <ul
-                        tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow">
-                        <li>
-                            <a>
-                                Profile   
-                            </a>
-                        </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
-                    </ul>
+                            tabIndex={0}
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow">
+                            <li>
+                                <a>
+                                    Profile
+                                </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li><a>Logout</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div className="dropdown dropdown-end">
@@ -62,9 +65,9 @@ export default function Header() {
                            
                         </div> */}
 
-                        SignUp
+                        <Link to={'/signup'}>SignUp</Link>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

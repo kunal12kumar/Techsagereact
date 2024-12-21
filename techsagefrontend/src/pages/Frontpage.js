@@ -1,6 +1,7 @@
 import React from "react";
 import arduino from './firstyou.jpg'
 import roboticsvideo from '../video/techsagevideo.mp4'
+import { Link } from "react-router-dom";
 
 
 export default function FrontPage() {
@@ -29,6 +30,23 @@ export default function FrontPage() {
                 </div>
             </div>
             <div className="carousel w-[100%] mx-auto flex  min-h-screen   border-[2px] shadow-2xl ">
+                <div id="slide5" className="carousel-item relative w-full">
+
+                    <video
+                        className="rounded-lg shadow-lg w-full  h-full"
+                        autoPlay
+                        muted
+                        loop
+                    >
+                        <source src={roboticsvideo} type="video/mp4" />
+
+                    </video>
+
+                    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" className="btn btn-circle">❮</a>
+                        <a href="#slide1" className="btn btn-circle">❯</a>
+                    </div>
+                </div>
                 <div id="slide1" className="carousel-item relative w-full">
                     <iframe
                         width="1000"
@@ -96,23 +114,7 @@ export default function FrontPage() {
                     </div>
                 </div>
 
-                <div id="slide5" className="carousel-item relative w-full">
 
-                    <video
-                        className="rounded-lg shadow-lg w-full  h-full"
-                        autoPlay
-                        muted
-                        loop
-                    >
-                        <source src={roboticsvideo} type="video/mp4" />
-
-                    </video>
-
-                    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide4" className="btn btn-circle">❮</a>
-                        <a href="#slide1" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
             </div>
         </div>
 

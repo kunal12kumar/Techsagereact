@@ -4,13 +4,18 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import Home from './pages/Home';
+import Signup from './pages/Signup';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let allrouter=createBrowserRouter([
   {
     path:'/',
     element:<Home></Home>
-  }
+  },
+  {
+    path:'/signup',
+    element:<Signup></Signup>
+  },
 
 ])
 root.render(

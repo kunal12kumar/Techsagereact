@@ -6,6 +6,7 @@ import Newfeatures from "./NewFeatures";
 import Footer from "./Footer";
 import Started from "./Started";
 import Techsageltd from "./Techsageltd";
+// import Signup from "./Signup";
 
 export default function Home(){
 
@@ -17,6 +18,7 @@ export default function Home(){
             <Newfeatures></Newfeatures>
             <Started></Started>
             <Techsageltd></Techsageltd>
+            {/* <Signup></Signup> */}
             <Footer></Footer>
             
         </div>
