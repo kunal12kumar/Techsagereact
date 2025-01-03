@@ -1,5 +1,5 @@
 import React from "react";
-import arduino from './firstyou.jpg'
+import arduino from '../image/firstyou.jpg'
 import roboticsvideo from '../video/techsagevideo.mp4'
 import { Link } from "react-router-dom";
 

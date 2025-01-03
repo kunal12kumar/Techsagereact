@@ -1,14 +1,14 @@
 import React from "react";
-import freeicon from "./freeicon";
-import robot from "./robot.gif";
-import ai from "./Ai.png";
-import code from './code.png';
-import support from './support.png';
-import collaboration from './collaboration.png';
-import bluewhite from "./bluewhite.jpg";
-import skywhite from "./skywhite.jpg";
-import bubbles from "./bubbles.jpg";
-import bluclouds from "./bluecloud.jpg";
+import freeicon from "../image/freeicon";
+import robot from "../image/robot.gif";
+import ai from "../image/Ai.png";
+import code from '../image/code.png';
+import support from '../image/support.png';
+import collaboration from '../image/collaboration.png';
+import bluewhite from "../image/bluewhite.jpg";
+import skywhite from "../image/skywhite.jpg";
+import bubbles from "../image/bubbles.jpg";
+import bluclouds from "../image/bluecloud.jpg";
 
 export default function Newfeatures() {
 

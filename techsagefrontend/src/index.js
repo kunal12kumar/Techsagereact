@@ -20,7 +20,8 @@ let allrouter=createBrowserRouter([
   {
     path:'/contactus',
     element:<ContactUs></ContactUs>
-  }
+  },
+  
 
 ])
 root.render(

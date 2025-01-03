@@ -1,11 +1,11 @@
 // in this Cod with Started code
 import React from "react";
 import { Link } from "react-router-dom";
-import correct from "./correct-30.png";
-import bluewhite from "./bluewhite.jpg";
-import skywhite from "./skywhite.jpg";
-import bubbles from "./bubbles.jpg";
-import bluclouds from "./bluecloud.jpg";
+import correct from "../image/correct-30.png";
+import bluewhite from "../image/bluewhite.jpg";
+import skywhite from "../image/skywhite.jpg";
+import bubbles from "../image/bubbles.jpg";
+import bluclouds from "../image/bluecloud.jpg";
 
 
 export default function Started() {

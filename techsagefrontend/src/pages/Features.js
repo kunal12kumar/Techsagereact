@@ -2,10 +2,8 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import bluewhite from "./bluewhite.jpg";
-import skywhite from "./skywhite.jpg";
-import bubbles from "./bubbles.jpg";
-import bluclouds from "./bluecloud.jpg";
+
+import bluclouds from "../image/bluecloud.jpg";
 
 export default function Features() {
 

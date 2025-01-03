@@ -1,8 +1,8 @@
 import React from "react";
-import instagram from "./instagram-logo.png";
-import facebook from "./facebook-logo.png";
-import x from "./x-logo.png";
-import linkedin from "./linkedin.png";
+import instagram from "../image/instagram-logo.png";
+import facebook from "../image/facebook-logo.png";
+import x from "../image/x-logo.png";
+import linkedin from "../image/linkedin.png";
 
 export default function Footer() {
 
