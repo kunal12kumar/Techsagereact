@@ -6,3 +6,4 @@ react-dom;
 react-router-dom;
 react-toastify;
 axios;
+@auth0/auth0-react;
