@@ -12,15 +12,15 @@ export default function FrontPage() {
 
             {/* from here written content of the page */}
 
-            <div className=" min-h-screen flex items-center justify-center">
-                <div className="text-center">
-                    <h1 className="text-5xl md:text-6xl font-bold font-poppins text-gray-900 mb-4">
+            <div className=" absolute z-[2] inset-0 text-white min-h-screen flex items-center justify-center">
+                <div className="text-center  ">
+                    <h1 className="text-5xl  md:text-6xl font-bold font-poppins  mb-4">
                         Building Tomorrow's Innovators
                     </h1>
-                    <h2 className="text-3xl md:text-4xl font-semibold font-poppins text-gray-700">
+                    <h2 className="text-3xl md:text-4xl font-semibold font-poppins ">
                         Today
                     </h2>
-                    <p className="text-lg md:text-xl font-poppins text-gray-500 mt-6">
+                    <p className="text-lg md:text-xl font-poppins  mt-6">
                         Learn Robotics & AI from IIT & RGIPT Engineers for grades 7-12
                     </p>
                     {/* button for contact to our sevices */}
@@ -29,11 +29,11 @@ export default function FrontPage() {
 
                 </div>
             </div>
-            <div className="carousel w-[100%] mx-auto flex  min-h-screen   border-[2px] shadow-2xl ">
-                <div id="slide5" className="carousel-item relative w-full">
+            <div className="carousel w-[100%]   min-h-screen   border-[2px] shadow-2xl ">
+                <div id="slide5" className="carousel-item w-full">
 
                     <video
-                        className="rounded-lg shadow-lg w-full  h-full"
+                        className="rounded-lg shadow-lg w-full brightness-[0.4]  h-full"
                         autoPlay
                         muted
                         loop
@@ -42,12 +42,12 @@ export default function FrontPage() {
 
                     </video>
 
-                    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    {/* <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a href="#slide4" className="btn btn-circle">❮</a>
                         <a href="#slide1" className="btn btn-circle">❯</a>
-                    </div>
+                    </div> */}
                 </div>
-                <div id="slide1" className="carousel-item relative w-full">
+                {/* <div id="slide1" className="carousel-item relative w-full">
                     <iframe
                         width="1000"
                         height="full"
@@ -112,7 +112,7 @@ export default function FrontPage() {
                         <a href="#slide3" className="btn btn-circle">❮</a>
                         <a href="#slide5" className="btn btn-circle">❯</a>
                     </div>
-                </div>
+                </div> */}
 
 
             </div>

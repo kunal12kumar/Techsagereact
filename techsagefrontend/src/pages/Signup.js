@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import axios from "axios"
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from "react-router-dom";
 
 
 // Here we are going to define for sign up page 
@@ -197,9 +198,9 @@ export default function Signup() {
                 
                     <p className="text-center text-sm text-gray-500 mt-4">
                         Already have an account?{" "}
-                        <a href="#" className="text-red-500 font-medium hover:underline">
+                        <Link to={'/log_in'}><h className="text-red-500 font-medium hover:underline">
                             Sign In
-                        </a>
+                        </h></Link>
                     </p>
                 </div>
             </form>

@@ -1,15 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  darkMode: ["class"],
+  content: ["./src/**/*.{html,js}","app/**/*.{js,jsx}", "components/**/*.{js,jsx}"],
   daisyui: {
     themes: ["light", "dark", "cupcake","garden"],
   },
   theme: {
     extend: {
+      
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'] ,// Add your custom font here
         lato: ['Lato', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif']
+        poppins: ['Poppins', 'sans-serif'],
+        clash: ['ClashGrotesk-Extralight', 'sans-serif'],
+
+
 
       },
 

@@ -1,0 +1,25 @@
+
+/* animation  */
+
+.animationonhover{
+    animation: glow-hover 0.5s infinite alternate;
+}
+
+.attention{
+    animation: inside-outside 1s infinite ;
+}
+
+@keyframes glow-hover {
+    0% { box-shadow: 0 0 60px rgba(16, 77, 207, 0.8); }
+    100% { box-shadow: 0 0 30px rgb(67, 5, 149); }
+  }
+
+@keyframes inside-outside {
+    0%{
+        transform: scale(85%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+    
+}

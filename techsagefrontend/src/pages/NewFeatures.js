@@ -9,11 +9,12 @@ import bluewhite from "../image/bluewhite.jpg";
 import skywhite from "../image/skywhite.jpg";
 import bubbles from "../image/bubbles.jpg";
 import bluclouds from "../image/bluecloud.jpg";
+import "./animation.css";
 
 export default function Newfeatures() {
 
     return (
-        <div className=" py-16 mih-h-screen">
+        <div className=" py-16  mih-h-screen">
 
             {/* section for new features */}
 
@@ -31,8 +32,8 @@ export default function Newfeatures() {
             
             <div className="w-[70%] h-auto grid grid-cols-2 gap-y-12 justify-items-center  mx-auto font-poppins">
 
-                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center  gap-[30px] hover:origin-top-left hover:rotate-6 "
-                style={{ backgroundImage: `url(${bubbles})` }}>
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center  gap-[30px] hover:origin-top-origin hover:rotate-6 animationonhover"
+                >
                     <img src={freeicon} className="pb-2"></img>
 
                     <h1 className="text-2xl font-semibold">Free Workshop</h1>
@@ -42,8 +43,8 @@ export default function Newfeatures() {
                 </div>
 
 
-                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center gap-[30px] hover:origin-top-left hover:rotate-6 "
-                style={{ backgroundImage: `url(${bubbles})` }}>
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center gap-[30px] hover:origin-top-origin hover:rotate-6 animationonhover"
+                >
                     <img src={robot} className="pb-2"></img>
 
                     <h1 className="text-2xl font-semibold">Hands-on robotics</h1>
@@ -53,8 +54,9 @@ export default function Newfeatures() {
                 </div>
 
 
-                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center gap-[30px] hover:origin-top-right hover:rotate-6 "
-                style={{ backgroundImage: `url(${bubbles})` }}>
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center gap-[30px] hover:origin-top-origin hover:rotate-6 animationonhover"
+                
+                >
                     <img src={ai} className="pb-2"></img>
 
                     <h1 className="text-2xl font-semibold">Artificial intelligence</h1>
@@ -64,8 +66,9 @@ export default function Newfeatures() {
                 </div>
 
 
-                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center  gap-[30px] hover:origin-top-right hover:rotate-6 "
-                style={{ backgroundImage: `url(${bubbles})` }}>
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center  gap-[30px] hover:origin-top-origin hover:rotate-6 animationonhover"
+                
+                >
                     <img src={code} className="pb-2"></img>
 
                     <h1 className="text-2xl font-semibold">Well documented code</h1>
@@ -74,8 +77,9 @@ export default function Newfeatures() {
 
                 </div>
 
-                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center gap-[30px] hover:origin-origin hover:rotate-6 "
-                style={{ backgroundImage: `url(${bubbles})` }}>
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center gap-[30px] hover:origin-origin hover:rotate-6 animationonhover"
+                
+                >
                     <img src={support} className="pb-2"></img>
 
                     <h1 className="text-2xl font-semibold">24/7 technical support</h1>
@@ -85,8 +89,9 @@ export default function Newfeatures() {
                 </div>
 
 
-                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center  gap-[30px] hover:origin-top-origin hover:rotate-6 "
-                style={{ backgroundImage: `url(${bubbles})` }}>
+                <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center  gap-[30px] hover:origin-top-origin hover:rotate-6 animationonhover"
+                
+                >
                     <img src={collaboration} className="pb-2"></img>
 
                     <h1 className="text-2xl font-semibold">Collaboration</h1>

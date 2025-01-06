@@ -7,6 +7,8 @@ import reportWebVitals from './reportWebVitals';
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import ContactUs from './pages/ContactUs';
+import LoginButton from './pages/SignIn';
+import LogoutButton from './pages/Sign_out';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let allrouter = createBrowserRouter([
@@ -22,6 +24,14 @@ let allrouter = createBrowserRouter([
     path: '/contactus',
     element: <ContactUs></ContactUs>
   },
+  {
+    path: '/log_in',
+    element:<LoginButton></LoginButton>
+  },
+  {
+    path:'/log_out',
+    element:<LogoutButton></LogoutButton>
+  }
 
 
 ])
@@ -31,7 +41,7 @@ root.render(
       domain="dev-xufegyqmkqi8ezy1.us.auth0.com"
       clientId="s0ymz0pMwIHrQRKBgyJ0qDs54jIAS5DX"
       authorizationParams={{
-        redirect_uri: window.location.origin
+        redirect_uri: "http://localhost:3000"
       }}
     >
       <RouterProvider router={allrouter}></RouterProvider>

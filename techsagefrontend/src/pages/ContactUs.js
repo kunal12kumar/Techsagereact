@@ -80,7 +80,7 @@ export default function ContactUs() {
 
         <div className="flex font-poppins justify-center items-center min-h-screen bg-gray-100">
             <ToastContainer></ToastContainer>
-            <div className="bg-white p-6 rounded-lg shadow-lg w-96">
+            <div className="bg-white p-6 rounded-lg shadow-lg w-[50%]">
                 <h2 className="text-2xl font-semibold text-gray-800 text-center mb-4">Contact  Us</h2>
                 <form onSubmit={handelSubmit}>
                     <div className="mb-4">
@@ -125,7 +125,7 @@ export default function ContactUs() {
                             className="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
                         />
                     </div>
-                    <div className="w-full max-w-lg mb-4 bg-white p-4 rounded-lg shadow-lg">
+                    <div className="w-full max-w-full mb-4 bg-white p-4 rounded-lg shadow-lg">
                         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Write Your Text</h2>
                         <textarea
                             onChange={updatedata}

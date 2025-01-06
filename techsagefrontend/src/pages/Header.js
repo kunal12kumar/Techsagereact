@@ -8,7 +8,7 @@ export default function Header() {
     return (
 
         // creating header 
-        <div className="navbar w-[70%]  rounded-full z-[1] mx-auto inset-x-0 fixed mt-8 bg-zinc-800">
+        <div className="navbar w-[70%]  rounded-full z-[4] mx-auto inset-x-0 font-clash fixed mt-8 bg-zinc-800">
             <div>
                 <h1 className="text-white text-center px-4">logo</h1>
             </div>
@@ -16,12 +16,13 @@ export default function Header() {
                 <a className="btn btn-ghost font-roboto from-accent-content  text-white text-2xl">techsage</a>
             </div>
             <div className="flex gap-6 justify-between">
-                <div className="dropdown dropdown-end">
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle px-6  ">
-                        <div className="indicator ">
-                            {/* <svg
+            <div className="drawer">
+                        <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+                        <div className="drawer-content">
+                            {/* Page content here */}
+                            <label htmlFor="my-drawer" className="btn bg-[black] border-[black] btn-primary drawer-button"><svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5"
+                                className="h-8 w-8 text-white rounded-lg"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -29,32 +30,29 @@ export default function Header() {
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     strokeWidth="2"
-                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg> */}
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="34" viewBox="0 0 24 24"
-                                style={{ fill: 'rgba(255, 255, 255, 1)', transform: '', msFilter: '' }}>
-                                <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path>
-                            </svg>
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg></label>
+                        </div>
+                        <div className="drawer-side ">
+                            <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay "></label>
+                            <ul className="menu bg-[black] flex justify-center text-white  text-2xl  min-h-full w-[320px]  gap-2">
+                                {/* Sidebar content here */}
+                                {/* <img className="h-[300px] " src={logo}></img> */}
+                               
+                                <Link to={'/bulk_order'}><li className="hover:bg-base-300 rounded-lg p-2">Customize Design</li></Link>
+                                <Link to={'/bulk_order'}><li className="hover:bg-base-300 rounded-lg p-2">Bulk Order</li></Link>
+                                <Link to={'/'}><li className="hover:bg-base-300 rounded-lg p-2">Huddy</li></Link>
+                                <Link to={'/sign_in'}><li className="hover:bg-base-300 rounded-lg p-2">Log In</li></Link>
+                                <Link to={'/'}><li className="hover:bg-base-300 rounded-lg p-2">About Us</li></Link>
+                                <Link to={'/'}><li className="hover:bg-base-300 rounded-lg p-2"> TShirts</li></Link>
+                                <Link to={'/log_out'}><li className="hover:bg-base-300 rounded-lg p-2"> Log Out</li></Link>
+                                
+                                
+    
 
-                            {/* <span className="badge badge-sm indicator-item">8</span> */}
+                            </ul>
                         </div>
                     </div>
-                    <div
-                        tabIndex={0}
-                        className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
-                        <ul
-                            tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow">
-                            <li>
-                                <a>
-                                    Profile
-                                </a>
-                            </li>
-                            <li><a>Settings</a></li>
-                            <li><a>Logout</a></li>
-                        </ul>
-                    </div>
-                </div>
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn font-poppins btn-md w-[90px] rounded-full ">
                         {/* <div className="w-4 rounded-full">

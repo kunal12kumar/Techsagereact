@@ -4,6 +4,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import bluclouds from "../image/bluecloud.jpg";
+import sykwhite from "../image/skywhite.jpg";
+
 
 export default function Features() {
 
@@ -11,8 +13,9 @@ export default function Features() {
 
     return (
         <div className="min-h-screen mt-52 ">
-            <div className=" w-[65%] h-[400px] overflow-hidden  bg-gradient-to-r from-cyan-500 to-blue-500 rounded-badge mx-auto border-[8px] bg-cover bg-center border-[white]"
-            style={{ backgroundImage: `url(${bluclouds})` }}
+          
+            <div className=" w-[65%] h-[400px] overflow-hidden   bg-gradient-to-r from-cyan-500 to-blue-500 rounded-badge mx-auto border-[8px] bg-cover bg-center border-[white]"
+            style={{ backgroundImage: `url(${sykwhite})` }}
             >
 
                 {/* now to create what we will offer section */}
