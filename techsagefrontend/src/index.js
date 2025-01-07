@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Auth0Provider } from '@auth0/auth0-react';
+
 import reportWebVitals from './reportWebVitals';
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import ContactUs from './pages/ContactUs';
 import LoginButton from './pages/SignIn';
 import LogoutButton from './pages/Sign_out';
+import SignIn from './pages/SignIn';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let allrouter = createBrowserRouter([
@@ -26,7 +27,7 @@ let allrouter = createBrowserRouter([
   },
   {
     path: '/log_in',
-    element:<LoginButton></LoginButton>
+    element:<SignIn></SignIn>
   },
   {
     path:'/log_out',
@@ -37,16 +38,8 @@ let allrouter = createBrowserRouter([
 ])
 root.render(
   <React.StrictMode>
-    <Auth0Provider
-      domain="dev-xufegyqmkqi8ezy1.us.auth0.com"
-      clientId="s0ymz0pMwIHrQRKBgyJ0qDs54jIAS5DX"
-      authorizationParams={{
-        redirect_uri: "http://localhost:3000"
-      }}
-    >
+   
       <RouterProvider router={allrouter}></RouterProvider>
-
-    </Auth0Provider>,
 
   </React.StrictMode>
 );

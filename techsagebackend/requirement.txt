@@ -6,3 +6,4 @@ mongoose;
 mongodb;
 bcryptjs;
 resend;
+nodemailer;
