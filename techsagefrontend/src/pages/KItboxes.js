@@ -2,10 +2,15 @@
 
 import React from "react";
 import sykwhite from "../image/bluewhite.jpg";
-import gridlines from "../image/gridpattern.jpg"
+import gridlines from "../image/gridpattern.jpg";
+import { loadStripe } from '@stripe/stripe-js';
+
 
 import "./animation.css"
 import { Link } from "react-router-dom";
+
+const stripePromise = loadStripe('your_stripe_publishable_key');
+
 
 
 
@@ -50,14 +55,20 @@ export default function Kitboxes() {
                                 <li className="projectbox">Smart Light Control using Wi-Fi</li>
                             </ul>
 
-                            <button className="border-[1px] w-[50%] text-center h-[40px] mx-auto items-center flex justify-center bg-[#3e6bdc] border-[black] mt-8 rounded-2xl py-4 text-2xl font-roboto hover:scale-90 "  >Buy now</button>
+                            <div>
+                                <button className="border-[1px] w-[50%] text-center h-[40px] mx-auto items-center flex justify-center bg-[#3e6bdc] border-[black] mt-8 rounded-2xl py-4 text-2xl font-roboto hover:scale-90 "  >Buy now</button>
 
-                           
+
+                            </div>
+
+
+
+
                         </div>
 
-                        
 
-                       
+
+
                     </div>
                 </div>
 
@@ -65,7 +76,7 @@ export default function Kitboxes() {
                 <div className="w-[40%]">
 
                     <div className="collapse border-[3px] border-[black] bg-cover bg-white hover:origin-top-origin hover:bg-[#aca7a7]  "
-                        >
+                    >
                         <input type="checkbox" />
                         <div className="collapse-title text-xl h-[250px] font-medium mx-auto">
 
