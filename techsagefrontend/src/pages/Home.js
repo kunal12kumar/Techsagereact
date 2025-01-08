@@ -6,6 +6,7 @@ import Newfeatures from "./NewFeatures";
 import Footer from "./Footer";
 import Started from "./Started";
 import Techsageltd from "./Techsageltd";
+import Kitboxes from "./KItboxes";
 // import Signup from "./Signup";
 
 export default function Home(){
@@ -15,6 +16,7 @@ export default function Home(){
             <Header></Header>
             <FrontPage></FrontPage>
             <Features></Features>
+            <Kitboxes></Kitboxes>
             <Newfeatures></Newfeatures>
             <Started></Started>
             <Techsageltd></Techsageltd>

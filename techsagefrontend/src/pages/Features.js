@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 import bluclouds from "../image/bluecloud.jpg";
 import sykwhite from "../image/skywhite.jpg";
+import gridlines from "../image/gridpattern.jpg"
 
 
 export default function Features() {

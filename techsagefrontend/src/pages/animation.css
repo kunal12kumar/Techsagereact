@@ -9,6 +9,19 @@
     animation: inside-outside 1s infinite ;
 }
 
+.projectbox {
+    border: 1px solid black; /* Specify width, style, and color */
+    border-radius: 10px;
+    margin: 2px;
+    padding: 4px;
+     /* Rounded corners */
+}
+
+.projectbox:hover{
+    background-color: azure;
+}
+
+
 @keyframes glow-hover {
     0% { box-shadow: 0 0 60px rgba(16, 77, 207, 0.8); }
     100% { box-shadow: 0 0 30px rgb(67, 5, 149); }
@@ -23,3 +36,4 @@
     }
     
 }
+

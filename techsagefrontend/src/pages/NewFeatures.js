@@ -18,7 +18,7 @@ export default function Newfeatures() {
 
             {/* section for new features */}
 
-            <div className=" w-[30%] h-[60px] flex justify-center items-center border-[3px ] mx-auto border-white bg-slate-300 rounded-full  ">
+            <div className=" w-[30%] h-[60px] flex justify-center items-center border-[3px ] mx-auto border-white bg-[#3084F2]  rounded-full  ">
                 <h1 className="text-2xl text-center font-poppins"> Features</h1>
                 
 
