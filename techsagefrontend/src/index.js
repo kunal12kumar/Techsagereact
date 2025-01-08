@@ -7,9 +7,9 @@ import reportWebVitals from './reportWebVitals';
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import ContactUs from './pages/ContactUs';
-import LoginButton from './pages/SignIn';
 import LogoutButton from './pages/Sign_out';
 import SignIn from './pages/SignIn';
+import Tutorial from './pages/Tutorial';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let allrouter = createBrowserRouter([
@@ -32,6 +32,10 @@ let allrouter = createBrowserRouter([
   {
     path:'/log_out',
     element:<LogoutButton></LogoutButton>
+  },
+  {
+    path:'/tutorial',
+    element:<Tutorial></Tutorial>
   }
 
 

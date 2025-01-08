@@ -3,8 +3,9 @@
 import React from "react";
 import sykwhite from "../image/bluewhite.jpg";
 import gridlines from "../image/gridpattern.jpg"
-import bubblesvideo from "../image/bubblesvideo.mp4";
+
 import "./animation.css"
+import { Link } from "react-router-dom";
 
 
 
@@ -38,8 +39,8 @@ export default function Kitboxes() {
                         <div className="collapse-content border-[1px] border-[black] m-2 rounded-2xl py-4">
                             <ul className="">
                                 <h1 className="flex justify-center text-xl font-semibold mx-auto mb-2">Projects Includes In this box</h1>
-                                <li className="projectbox">LED Control Using ESP32
-                                </li>
+                                <Link to={'/tutorial'}><li className="projectbox">LED Control Using ESP32
+                                </li></Link>
                                 <li className="projectbox">Smart Traffic & Lighting System</li>
                                 <li className="projectbox">Laser Tripwire Security System
                                 </li>
@@ -75,7 +76,7 @@ export default function Kitboxes() {
                         </div>
                         <div className="collapse-content border-[1px] border-[black] m-2 rounded-2xl py-4">
                             <ul>
-                                <h1 className="flex justify-center text-xl font-semibold mx-auto mb-2">Projects Includes In this box</h1>
+                                <h1 className="flex justify-center text-xl font-semibold mx-auto mb-2 ">Projects Includes In this box</h1>
                                 <li className="projectbox">LED Control Using ESP32
                                 </li>
                                 <li className="projectbox">Smart Traffic & Lighting System</li>
