@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import axios from "axios"
 import 'react-toastify/dist/ReactToastify.css';
@@ -21,6 +22,8 @@ export default function SignIn() {
 
     }
   );
+
+  const navigate = useNavigate();
 
   // by this function we are updating our data by each later
   const updatedata = (event) => {
@@ -73,7 +76,11 @@ export default function SignIn() {
       console.log(response);
 
       if (response.status === 200) {
+        const token=response.data.token
+        localStorage.setItem("token", token);   //storing token in localStorage to use it latter
+        console.log(token)
         toast.success(response.data.message);
+        navigate('/profile')
 
       }
     } catch (error) {

@@ -10,6 +10,7 @@ import ContactUs from './pages/ContactUs';
 import LogoutButton from './pages/Sign_out';
 import SignIn from './pages/SignIn';
 import Tutorial from './pages/Tutorial';
+import UserProfile from './pages/UserProfile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let allrouter = createBrowserRouter([
@@ -36,6 +37,10 @@ let allrouter = createBrowserRouter([
   {
     path:'/tutorial',
     element:<Tutorial></Tutorial>
+  },
+  {
+    path:'/profile',
+    element:<UserProfile></UserProfile>
   }
 
 

@@ -45,7 +45,7 @@ export default function Header() {
                                 <Link to={'/log_in'}><li className="hover:bg-base-300 rounded-lg p-2">Log In</li></Link>
                                 <Link to={'/'}><li className="hover:bg-base-300 rounded-lg p-2">About Us</li></Link>
                                 <Link to={'/'}><li className="hover:bg-base-300 rounded-lg p-2"> TShirts</li></Link>
-                                <Link to={'/'}><li className="hover:bg-base-300 rounded-lg p-2"> Log Out</li></Link>
+                                <Link to={'/log_out'}><li className="hover:bg-base-300 rounded-lg p-2"> Log Out</li></Link>
                                 
                                 
     

@@ -34,6 +34,9 @@ server.get('/', (req, res) => {
     res.send('Server is ready');
 });
 
+// defining middleware for verifying token to restrict anauthorized user
+
+
 // now inroducing the middleware in between 
 
 server.use('/api/Rsignupuser',signuprouter);
