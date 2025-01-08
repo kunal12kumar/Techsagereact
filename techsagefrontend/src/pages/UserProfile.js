@@ -14,7 +14,7 @@ export default function UserProfile() {
         const token = localStorage.getItem("token");
 
         if (!token) {
-            navigate("/login"); // Redirect to login if no token found
+            navigate("/log_in"); // Redirect to login if no token found
             return;
         }
 
@@ -24,7 +24,7 @@ export default function UserProfile() {
             setUserInfo(decoded); // Set the decoded user information in state
         } catch (error) {
             console.error("Invalid token:", error);
-            navigate("/login"); // Redirect to login if token is invalid or expired
+            navigate("/log_in"); // Redirect to login if token is invalid or expired
         }
     }, [navigate]);
 

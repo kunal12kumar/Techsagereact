@@ -4,15 +4,21 @@
 // and also give our contact no and eamil for contact 
 
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
+import { useNavigate } from "react-router-dom";
 
 
 
 
 export default function ContactUs() {
+
+    const token = localStorage.getItem("token");
+    const navigate = useNavigate();
+
+   
 
     // to udate the all data 
     const [contactusdetails, setcontactusdetails] = useState(
@@ -23,6 +29,15 @@ export default function ContactUs() {
             query: ''
         }
     );
+
+//    useEffect(()=>{
+//     if (!token) {
+//         navigate("/log_in"); // Redirect to login if no token found
+//         return;
+//     }
+//    },[navigate])
+
+    
 
     // by this function we are updating our data by each later
     const updatedata = (event) => {

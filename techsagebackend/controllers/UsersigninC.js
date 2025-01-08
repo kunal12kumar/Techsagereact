@@ -43,7 +43,7 @@ export const Usersignin= async (req ,res)=>{
         const SECRET_KEY =process.env.SECRET_KEY;
 
         if (isPasswordValid) {
-            const token = jwt.sign({ username ,email }, SECRET_KEY, { expiresIn: '1h' });
+            const token = jwt.sign({ username ,email,Userexitwiththisemail }, SECRET_KEY, { expiresIn: '1h' });
             res.status(200).json({
                 success: true,
                 message: "Sign In Successful",
