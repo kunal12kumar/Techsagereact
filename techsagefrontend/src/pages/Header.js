@@ -38,14 +38,17 @@ export default function Header() {
                             <ul className="menu bg-[black] flex justify-center text-white  text-2xl  min-h-full w-[320px]  gap-2">
                                 {/* Sidebar content here */}
                                 {/* <img className="h-[300px] " src={logo}></img> */}
+
+                                <Link to={'/profile'}><li className="hover:bg-base-300 rounded-lg p-2"> Profile</li></Link>
                                
-                                <Link to={'/bulk_order'}><li className="hover:bg-base-300 rounded-lg p-2">Customize Design</li></Link>
-                                <Link to={'/bulk_order'}><li className="hover:bg-base-300 rounded-lg p-2">Bulk Order</li></Link>
-                                <Link to={'/'}><li className="hover:bg-base-300 rounded-lg p-2">Huddy</li></Link>
+                                <Link to={'/contactus'}><li className="hover:bg-base-300 rounded-lg p-2">ContactUs</li></Link>
+                              
+                             
                                 <Link to={'/log_in'}><li className="hover:bg-base-300 rounded-lg p-2">Log In</li></Link>
                                 <Link to={'/'}><li className="hover:bg-base-300 rounded-lg p-2">About Us</li></Link>
-                                <Link to={'/'}><li className="hover:bg-base-300 rounded-lg p-2"> TShirts</li></Link>
+                                <Link to={'/kitboxes'}><li className="hover:bg-base-300 rounded-lg p-2">Kit Boxes</li></Link>
                                 <Link to={'/log_out'}><li className="hover:bg-base-300 rounded-lg p-2"> Log Out</li></Link>
+                                
                                 
                                 
     
