@@ -34,7 +34,9 @@ export const Usersignin= async (req ,res)=>{
 
 
         }
-        const username=Userexitwiththisemail.username
+
+        if (Userexitwiththisemail.isVarified){
+            const username=Userexitwiththisemail.username
 
         const userhashedpassword= Userexitwiththisemail.password;
 
@@ -55,6 +57,14 @@ export const Usersignin= async (req ,res)=>{
                 message: "Invalid password",
             });
         }
+
+        }else{
+            res.status(402).json({
+                success :false,
+                message: "Kindly first Verify your account"
+            })
+        }
+
 
         
     } catch (error) {

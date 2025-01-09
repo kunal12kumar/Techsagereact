@@ -32,6 +32,8 @@ export default function Newfeatures() {
             
             <div className="w-[70%] h-auto grid grid-cols-2 gap-y-12 justify-items-center  mx-auto font-poppins">
 
+                
+
                 <div className="w-[80%] h-[280px] flex flex-col border-[3px] rounded-[30px] border-white bg-blue-400 justify-center items-center bg-cover bg-center  gap-[30px] hover:origin-top-origin hover:rotate-6 animationonhover"
                 >
                     <img src={freeicon} className="pb-2"></img>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
-import { useAuth0 } from "@auth0/auth0-react";
+
 
 const LogoutButton = () => {
   const navigate = useNavigate();

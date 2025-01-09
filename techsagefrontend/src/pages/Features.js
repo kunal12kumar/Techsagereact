@@ -26,11 +26,11 @@ export default function Features() {
                 </div>
 
                 <div className="mx-auto flex justify-center  ">
-                    <h1 className=" text-4xl font-serif"> What Skills Your Kid will learn</h1>
+                    <h1 className=" text-4xl font-Ubuntu font-semibold"> What Skills Your Kid will learn</h1>
                 </div>
 
                 {/* for skills */}
-                <div className="grid font-roboto  grid-cols-3 gap-5 p-4 animate-slideInLeft">
+                <div className="grid font-Ubuntu  grid-cols-3 gap-5 p-4 ">
 
 
 
@@ -39,7 +39,7 @@ export default function Features() {
                     <h1 className="bg-white border-2 hover:scale-90 hover:bg-blue-400 border-gray-200 rounded-3xl px-6 py-3 shadow-md text-gray-800 font-semibold  ">Artificial Intelligience</h1>
 
                 </div>
-                <div className="grid  font-poppins grid-cols-3 gap-5 p-4 animate-slideInRight">
+                <div className="grid  font-poppins grid-cols-3 gap-5 p-4 ">
 
 
 

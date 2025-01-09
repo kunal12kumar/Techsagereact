@@ -21,7 +21,7 @@ server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
 
 // Enable CORS and JSON parsing
-server.use(cors({ origin: "http://localhost:3000", credentials: true }));
+server.use(cors({ origin: "http://localhost:3001", credentials: true }));
 server.use(express.json());
 
 const database=  dbconnect();
