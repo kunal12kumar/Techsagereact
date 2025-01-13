@@ -3,6 +3,7 @@
 import React from "react";
 import sykwhite from "../image/bluewhite.jpg";
 import gridlines from "../image/gridpattern.jpg";
+import innovatorboxplus from "../image/innovator-box-plus.jpg";
 import { loadStripe } from '@stripe/stripe-js';
 
 
@@ -23,18 +24,18 @@ export default function Kitboxes() {
         // IN this we will create two boxes when we click on that box it will open with containg the list of all projects that can be build by that projects
 
 
-        <div className="min-h-screen ">
+        <div className="min-h-screen  ">
             {/* first box having  Name : Innovator Box Mini*/}
 
-            <h1 className="  text-5xl  rounded-full mt-12 mx-auto items-center justify-center flex text-white h-[50px] w-[30%] text-[20px]  bg-[#3084F2]  font-poppins">Innovator Box</h1>
+            <h1 className="  text-2xl sm:text-5xl text-center font-semibold rounded-full mt-12 mx-auto items-center justify-center flex text-black  font-passion">Learn Robotics With Innovator Box</h1>
 
-            <div className="flex min-w-full gap-10 justify-center mt-10" >
+            <div className="flex sm:flex-row flex-col ml-5  min-w-full gap-10 justify-center mt-10" >
 
-                <div className="w-[40%]">
+                <div className=" w-[90%] sm:w-[40%]">
                     <div className="collapse border-[3px] border-[black] bg-cover bg-white hover:origin-top-origin hover:bg-[#aca7a7] "
                     >
                         <input type="checkbox" />
-                        <div className="collapse-title h-[250px] text-xl font-medium mx-auto">
+                        <div className="collapse-title h-[250px] text-xl bg-cover font-medium mx-auto "  >
 
                             <h1 className="text-3xl flex justify-center items-center">Innovator Mini Box</h1>
                             <h1 className="text-2xl flex text-center justify-center items-center pt-4 text-dark ">Unbox Creativity, Build Your Dreams!</h1>
@@ -73,7 +74,7 @@ export default function Kitboxes() {
                 </div>
 
 
-                <div className="w-[40%]">
+                <div className=" w-[90%] sm:w-[40%]">
 
                     <div className="collapse border-[3px] border-[black] bg-cover bg-white hover:origin-top-origin hover:bg-[#aca7a7]  "
                     >

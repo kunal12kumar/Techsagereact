@@ -13,7 +13,10 @@ module.exports = {
         lato: ['Lato', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
         clash: ['ClashGrotesk-Extralight', 'sans-serif'],
-        Ubuntu:['font-family: "Ubuntu", sans-serif']
+        Ubuntu:['Ubuntu', 'sans-serif'],
+        passion: ["Passion One", 'sans-serif'],
+        new: ["Playwrite AU SA", 'serif'],
+        tight: ["Inter Tight", 'sans-serif']
 
 
 

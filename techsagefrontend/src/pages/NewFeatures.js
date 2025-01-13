@@ -18,7 +18,7 @@ export default function Newfeatures() {
 
             {/* section for new features */}
 
-            <div className=" w-[30%] h-[60px] flex justify-center items-center border-[3px ] mx-auto border-white bg-[#3084F2]  rounded-full  ">
+            <div className=" w-[90%] sm:w-[30%] h-[60px] flex justify-center items-center border-[3px ] mx-auto border-white bg-[#3084F2]  rounded-full  ">
                 <h1 className="text-2xl text-center font-poppins"> Features</h1>
                 
 
@@ -30,7 +30,7 @@ export default function Newfeatures() {
                 </p>
             </div>
             
-            <div className="w-[70%] h-auto grid grid-cols-2 gap-y-12 justify-items-center  mx-auto font-poppins">
+            <div className="sm:w-[70%] h-auto grid md:grid-cols-2 gap-y-12 justify-items-center  mx-auto font-poppins">
 
                 
 

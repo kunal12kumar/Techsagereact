@@ -51,7 +51,8 @@ let allrouter = createBrowserRouter([
   {
     path:'/profile',
     element:<UserProfile></UserProfile>
-  }
+  },
+  
 
 
 ])

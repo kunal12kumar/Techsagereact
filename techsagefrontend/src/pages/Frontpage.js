@@ -7,29 +7,27 @@ import { Link } from "react-router-dom";
 export default function FrontPage() {
 
     return (
-        <div className="relative ">
+        <div className="sm:relative ">
 
 
             {/* from here written content of the page */}
 
-            <div className=" absolute z-[2] inset-0 text-white min-h-screen flex items-center justify-center">
+            <div className=" sm:absolute sm:z-[2] inset-0 sm:text-white sm:min-h-screen py-28 flex items-center justify-center">
                 <div className="text-center  ">
-                    <h1 className="text-5xl  md:text-6xl font-bold font-poppins  mb-4">
-                        Building Tomorrow's Innovators
+                    <h1 className="text-5xl  md:text-6xl font-lato font-[800]  mb-4">
+                        Build Your First Robot 
                     </h1>
-                    <h2 className="text-3xl md:text-4xl font-semibold font-poppins ">
-                        Today
-                    </h2>
-                    <p className="text-lg md:text-xl font-poppins  mt-6">
-                        Learn Robotics & AI from IIT & RGIPT Engineers for grades 7-12
+                    
+                    <p className="text-[18px] md:text-[18px] font-poppins  mt-6">
+                    Project-Based Learning Through Step-By-Step Guided Tutorials
                     </p>
                     {/* button for contact to our sevices */}
 
-                    <Link to={'/contactus'}><button className=" rounded-full mt-12 text-white h-[50px] w-[40%] text-[20px]  font-poppins bg-[#3084F2] hover:bg-sky-500 hover:scale-90">Get Your First Free Workshop</button></Link>
+                    <Link to={'/contactus'}><button className=" rounded-full mt-12 text-white h-[50px] px-4 sm:w-[50%] text-[20px]  font-poppins bg-[#3084F2] hover:bg-sky-500 hover:scale-90">Get Your First Robotics Kit</button></Link>
 
                 </div>
             </div>
-            <div className="carousel w-[100%]   min-h-screen   border-[2px] shadow-2xl ">
+            <div className="carousel w-[100%]   sm:min-h-screen   border-[2px] shadow-2xl ">
                 <div id="slide5" className="carousel-item w-full">
 
                     <video
