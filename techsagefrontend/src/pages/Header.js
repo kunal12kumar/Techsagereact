@@ -9,8 +9,8 @@ export default function Header() {
 
         // creating header 
         <div className="navbar w-[98%] sm:w-[70%]   rounded-full z-[4] mx-auto inset-x-0 font-clash fixed mt-8 bg-zinc-800">
-            <div>
-            <Link to={'/'}><h1 className="text-white text-center px-4">logo</h1></Link>
+            <div >
+            ><h1 className="text-white  text-center px-4">logo</h1>
             </div>
             <div className="flex-1">
                 <Link to={'/'}><a className="btn btn-ghost font-roboto from-accent-content  text-white text-2xl">techsage</a></Link>
