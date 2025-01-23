@@ -9,6 +9,7 @@ import axios from "axios";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from "react-router-dom";
+import Header from "./Header";
 
 
 
@@ -93,9 +94,12 @@ export default function ContactUs() {
 
     return (
 
+        <div>
+            <Header></Header>
+
         <div className="flex font-poppins justify-center items-center min-h-screen bg-gray-100">
             <ToastContainer></ToastContainer>
-            <div className="bg-white p-6 rounded-lg shadow-lg w-[50%]">
+            <div className="bg-white mt-32  p-6   rounded-lg shadow-lg w-[50%]">
                 <h2 className="text-2xl font-semibold text-gray-800 text-center mb-4">Contact  Us</h2>
                 <form onSubmit={handelSubmit}>
                     <div className="mb-4">
@@ -175,6 +179,7 @@ export default function ContactUs() {
                 </form>
 
             </div>
+        </div>
         </div>
 
 
