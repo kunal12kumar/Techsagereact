@@ -40,10 +40,6 @@ let allrouter = createBrowserRouter([
     element:<Tutorial></Tutorial>
   },
   {
-    path:'/profile',
-    element:<UserProfile></UserProfile>
-  },
-  {
     path:'/kitboxes',
     element:<Kitboxes></Kitboxes>
 

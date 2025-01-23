@@ -4,6 +4,7 @@ import React from "react";
 import sykwhite from "../image/bluewhite.jpg";
 import gridlines from "../image/gridpattern.jpg";
 import innovatorboxplus from "../image/innovator-box-plus.jpg";
+import Header from "./Header";
 
 
 import "./animation.css"
@@ -21,6 +22,8 @@ export default function Kitboxes() {
     return (
 
         // IN this we will create two boxes when we click on that box it will open with containg the list of all projects that can be build by that projects
+        
+
 
 
         <div className="min-h-screen ">
@@ -126,9 +129,10 @@ export default function Kitboxes() {
 
 
             </div>
+            </div>
 
 
-        </div>
+        
 
 
     )
