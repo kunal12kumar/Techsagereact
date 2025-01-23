@@ -43,18 +43,18 @@ export default function Kitboxes() {
 
                         </div>
 
-                        <div className=" border-[1px] border-[black] m-2 rounded-2xl py-4">
+                        <div className=" border-[1px] border-[black] m-2 rounded-2xl py-8">
                             <ul className="">
                                 <h1 className="flex justify-center text-xl font-semibold mx-auto mb-2">Projects Includes In this box</h1>
-                                <Link to={'/tutorial'}><li className="projectbox">LED Control Using ESP32
+                                <Link to={'/tutorial'}><li className="projectboxsmall">LED Control Using ESP32
                                 </li></Link>
-                                <li className="projectbox">Smart Traffic & Lighting System</li>
-                                <li className="projectbox">Laser Tripwire Security System
+                                <li className="projectboxsmall">Smart Traffic & Lighting System</li>
+                                <li className="projectboxsmall">Laser Tripwire Security System
                                 </li>
-                                <li className="projectbox">Proximity Alert Display
+                                <li className="projectboxsmall">Proximity Alert Display
                                 </li>
-                                <li className="projectbox">Dino Game on LCD</li>
-                                <li className="projectbox">Smart Light Control using Wi-Fi</li>
+                                <li className="projectboxsmall">Dino Game on LCD</li>
+                                <li className="projectboxsmall">Smart Light Control using Wi-Fi</li>
                             </ul>
 
 

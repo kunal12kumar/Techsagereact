@@ -3,6 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import axios from "axios"
 import 'react-toastify/dist/ReactToastify.css';
 import { Link } from "react-router-dom";
+import Header from "./Header";
 
 
 // Here we are going to define for sign up page 
@@ -94,11 +95,11 @@ export default function Signup() {
                 }
 
                 setuserdata({
-                    username:'',
-                    email:'',
-                    mobileno:'',
-                    password:'',
-                    otp:''
+                    username: '',
+                    email: '',
+                    mobileno: '',
+                    password: '',
+                    otp: ''
 
                 })
 
@@ -118,12 +119,14 @@ export default function Signup() {
 
 
     return (
-        <div className="flex font-poppins justify-center  items-center min-h-screen bg-gray-100">
-            <ToastContainer />
-            <form onSubmit={handelSubmit}>
-                <div className="bg-white p-2  m-7 rounded-lg shadow-lg w-96">
-                    <h2 className="text-2xl font-semibold text-gray-800 text-center mb-6">Sign Up</h2>
-                
+        <div>
+            <Header></Header>
+            <div className="flex font-poppins justify-center  items-center min-h-screen bg-gray-100">
+                <ToastContainer />
+                <form  onSubmit={handelSubmit}>
+                    <div className="bg-white p-2  m-7 mt-32 h-[70%] rounded-lg shadow-lg w-96">
+                        <h2 className="text-2xl font-semibold text-gray-800 text-center mb-6">Sign Up</h2>
+
                         <div className="mb-3">
                             <label htmlFor="fullName" className="block text-sm font-medium text-gray-600 mb-1">
                                 Username
@@ -195,15 +198,16 @@ export default function Signup() {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-12" />
                             </svg>
                         </button> */}
-                
-                    <p className="text-center text-sm text-gray-500 mt-4">
-                        Already have an account?{" "}
-                        <Link to={'/log_in'}><h className="text-red-500 font-medium hover:underline">
-                            Sign In
-                        </h></Link>
-                    </p>
-                </div>
-            </form>
+
+                        <p className="text-center text-sm text-gray-500 mt-4">
+                            Already have an account?{" "}
+                            <Link to={'/log_in'}><h className="text-red-500 font-medium hover:underline">
+                                Sign In
+                            </h></Link>
+                        </p>
+                    </div>
+                </form>
+            </div>
         </div>
     );
 };

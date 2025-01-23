@@ -4,7 +4,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import axios from "axios"
 import 'react-toastify/dist/ReactToastify.css';
 import { Link } from "react-router-dom";
-import './animation.css'
+import './animation.css';
+import Header from "./Header";
+
 
 
 // Here we are going to define for sign up page 
@@ -108,10 +110,12 @@ export default function SignIn() {
 
 
   return (
+    <div>
+      <Header></Header>
     <div className="flex font-poppins   justify-center items-center min-h-screen bg-gray-100">
       <ToastContainer />
       
-        <form  className=" w-full flex justify-center items-center" onSubmit={handelSubmit}>
+        <form  className=" w-full flex justify-center mt-14 items-center" onSubmit={handelSubmit}>
           <div className="  bg-[white] rounded-lg w-[40%] p-8">
             <h2 className="text-2xl font-semibold text-black text-center ">Log In</h2>
 
@@ -173,6 +177,7 @@ export default function SignIn() {
             </p>
           </div>
         </form>
+      </div>
       </div>
     
   );

@@ -13,9 +13,17 @@
     border: 1px solid rgb(54, 51, 51); /* Specify width, style, and color */
     border-radius: 10px;
     margin: 2px;
-    padding: 4px;
+    padding: 8px;
      /* Rounded corners */
 }
+.projectboxsmall {
+    border: 1.5px solid rgb(54, 51, 51); /* Specify width, style, and color */
+    border-radius: 10px;
+    margin: 8px;
+    padding: 16px;
+     /* Rounded corners */
+}
+
 
 .projectbox:hover{
     background-color: azure;
