@@ -4,20 +4,20 @@ const Techsagework = () => {
   const steps = [
     {
       id: 1,
-      title: "Build",
-      description: "Build your own toys and robots with simple step-by-step instructions.",
+      title: "Unbox",
+      description: "Open your Innovator Box and explore all the exciting components inside",
       image: "/path/to/build-image.png", // Replace with the actual path
     },
     {
       id: 2,
-      title: "Play and Hack",
-      description: "Play, hack, and iterate with every new box.",
+      title: "Build",
+      description: "Follow the easy-to-understand guide to assemble and create your project",
       image: "/path/to/play-hack-image.png", // Replace with the actual path
     },
     {
       id: 3,
-      title: "Think",
-      description: "Think about how it all fits together with mind-blowing exclusive videos from Mark Rober.",
+      title: "Discover",
+      description: "Learn new skills, experiment, and enjoy the fun of innovation",
       image: "/path/to/think-image.png", // Replace with the actual path
     },
   ];

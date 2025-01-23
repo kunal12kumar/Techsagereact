@@ -4,13 +4,12 @@ import React from "react";
 import sykwhite from "../image/bluewhite.jpg";
 import gridlines from "../image/gridpattern.jpg";
 import innovatorboxplus from "../image/innovator-box-plus.jpg";
-import { loadStripe } from '@stripe/stripe-js';
 
 
 import "./animation.css"
 import { Link } from "react-router-dom";
 
-const stripePromise = loadStripe('your_stripe_publishable_key');
+
 
 
 
@@ -24,25 +23,27 @@ export default function Kitboxes() {
         // IN this we will create two boxes when we click on that box it will open with containg the list of all projects that can be build by that projects
 
 
-        <div className="min-h-screen  ">
+        <div className="min-h-screen ">
             {/* first box having  Name : Innovator Box Mini*/}
 
-            <h1 className="  text-2xl sm:text-5xl text-center font-semibold rounded-full mt-12 mx-auto items-center justify-center flex text-black  font-passion">Learn Robotics With Innovator Box</h1>
+            <h1 className=" text-2xl sm:text-5xl text-center font-semibold rounded-full mt-20 mx-auto items-center justify-center flex text-black ml-4 sm:ml-0 font-passion">Learn Robotics With Innovator Box</h1>
 
-            <div className="flex sm:flex-row flex-col ml-5  min-w-full gap-10 justify-center mt-10" >
+            <div className="flex sm:flex-row flex-col ml-8 sm:ml-0 min-w-full gap-10 justify-center mt-10" >
 
                 <div className=" w-[90%] sm:w-[40%]">
-                    <div className="collapse border-[3px] border-[black] bg-cover bg-white hover:origin-top-origin hover:bg-[#aca7a7] "
+                    <div className="border-[3px] rounded-2xl  border-[black] bg-cover bg-white   "
                     >
-                        <input type="checkbox" />
-                        <div className="collapse-title h-[250px] text-xl bg-cover font-medium mx-auto "  >
+                        {/* <input type="checkbox" /> */}
+                        <div className=" text-xl h-[250px] font-medium mx-auto">
 
-                            <h1 className="text-3xl flex justify-center items-center">Innovator Mini Box</h1>
-                            <h1 className="text-2xl flex text-center justify-center items-center pt-4 text-dark ">Unbox Creativity, Build Your Dreams!</h1>
+                            <h1 className="text-3xl flex mt-4 justify-center items-center">Innovator Box Plus</h1>
+                            <button className="border-[1px] w-[50%] text-center h-[40px] mx-auto items-center flex justify-center bg-[#3e6bdc] border-[black] mt-8 rounded-2xl py-4 text-2xl font-roboto hover:scale-90" >Buy now</button>
+                            
+
 
                         </div>
 
-                        <div className="collapse-content border-[1px] border-[black] m-2 rounded-2xl py-4">
+                        <div className=" border-[1px] border-[black] m-2 rounded-2xl py-4">
                             <ul className="">
                                 <h1 className="flex justify-center text-xl font-semibold mx-auto mb-2">Projects Includes In this box</h1>
                                 <Link to={'/tutorial'}><li className="projectbox">LED Control Using ESP32
@@ -56,11 +57,7 @@ export default function Kitboxes() {
                                 <li className="projectbox">Smart Light Control using Wi-Fi</li>
                             </ul>
 
-                            <div>
-                                <button className="border-[1px] w-[50%] text-center h-[40px] mx-auto items-center flex justify-center bg-[#3e6bdc] border-[black] mt-8 rounded-2xl py-4 text-2xl font-roboto hover:scale-90 "  >Buy now</button>
 
-
-                            </div>
 
 
 
@@ -68,6 +65,13 @@ export default function Kitboxes() {
                         </div>
 
 
+
+
+
+
+                    </div>
+                    <div>
+                        
 
 
                     </div>
@@ -76,17 +80,18 @@ export default function Kitboxes() {
 
                 <div className=" w-[90%] sm:w-[40%]">
 
-                    <div className="collapse border-[3px] border-[black] bg-cover bg-white hover:origin-top-origin hover:bg-[#aca7a7]  "
+                    <div className=" border-[3px] rounded-2xl border-[black] bg-cover bg-white   "
                     >
-                        <input type="checkbox" />
-                        <div className="collapse-title text-xl h-[250px] font-medium mx-auto">
+                        {/* <input type="checkbox" /> */}
+                        <div className=" text-xl h-[250px] font-medium mx-auto">
 
-                            <h1 className="text-3xl flex justify-center items-center">Innovator Box Plus</h1>
-                            <h1 className="text-2xl flex text-center justify-center items-center pt-4 text-dark ">Open the Box, Ignite Innovation!</h1>
+                            <h1 className="text-3xl flex mt-4 justify-center items-center">Innovator Box Plus</h1>
+                            <button className="border-[1px] w-[50%] text-center h-[40px] mx-auto items-center flex justify-center bg-[#3e6bdc] border-[black] mt-8 rounded-2xl py-4 text-2xl font-roboto hover:scale-90" >Buy now</button>
+                            
 
 
                         </div>
-                        <div className="collapse-content border-[1px] border-[black] m-2 rounded-2xl py-4">
+                        <div className=" border-[1px] border-[black] m-2 rounded-2xl py-4">
                             <ul>
                                 <h1 className="flex justify-center text-xl font-semibold mx-auto mb-2 ">Projects Includes In this box</h1>
                                 <li className="projectbox">LED Control Using ESP32
@@ -110,12 +115,14 @@ export default function Kitboxes() {
 
                             </ul>
 
-                            <button className="border-[1px] w-[50%] text-center h-[40px] mx-auto items-center flex justify-center bg-[#3e6bdc] border-[black] mt-8 rounded-2xl py-4 text-2xl font-roboto hover:scale-90" >Buy now</button>
                         </div>
                     </div>
+                    
+                    
                 </div>
 
                 {/* second box having Name: Innovator Box Plus */}
+                
 
 
             </div>

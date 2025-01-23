@@ -8,14 +8,14 @@ export default function Header() {
     return (
 
         // creating header 
-        <div className="navbar w-[90%] sm:w-[70%] s  rounded-full z-[4] mx-auto inset-x-0 font-clash fixed mt-8 bg-zinc-800">
+        <div className="navbar w-[98%] sm:w-[70%]   rounded-full z-[4] mx-auto inset-x-0 font-clash fixed mt-8 bg-zinc-800">
             <div>
                 <h1 className="text-white text-center px-4">logo</h1>
             </div>
             <div className="flex-1">
                 <a className="btn btn-ghost font-roboto from-accent-content  text-white text-2xl">techsage</a>
             </div>
-            <div className="flex gap-6 sm:justify-between">
+            <div className="flex sm:gap-6  sm:justify-between">
                 <div className="drawer">
                     <input id="my-drawer" type="checkbox" className="drawer-toggle" />
                     <div className="drawer-content">
@@ -56,8 +56,8 @@ export default function Header() {
                         </ul>
                     </div>
                 </div>
-                <div className="dropdown dropdown-end">
-                    <div tabIndex={0} role="button" className="btn font-poppins btn-md w-[90px] rounded-full ">
+                <div className="dropdown dropdown-end ">
+                <Link to={'/log_in'}><div tabIndex={0} role="button" className="btn font-poppins  btn-md w-[90px] rounded-full ">
                         {/* <div className="w-4 rounded-full">
                             <img
                                 alt="Tailwind CSS Navbar component"
@@ -66,8 +66,8 @@ export default function Header() {
                            
                         </div> */}
 
-                        <Link to={'/signup'}>SignUp</Link>
-                    </div>
+                        Log In
+                    </div></Link>
 
                 </div>
             </div>

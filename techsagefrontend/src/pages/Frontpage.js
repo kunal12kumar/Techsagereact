@@ -12,13 +12,13 @@ export default function FrontPage() {
 
             {/* from here written content of the page */}
 
-            <div className=" sm:absolute sm:z-[2] inset-0 sm:text-white sm:min-h-screen py-28 flex items-center justify-center">
+            <div className=" sm:absolute sm:z-[2] inset-0 sm:text-white sm:min-h-screen sm:py-28 pt-36  pb-8  flex items-center justify-center">
                 <div className="text-center  ">
-                    <h1 className="text-5xl  md:text-6xl font-lato font-[800]  mb-4">
+                    <h1 className="text-5xl ml-8 sm:ml-0 md:text-6xl font-lato font-[800]  mb-4">
                         Build Your First Robot 
                     </h1>
                     
-                    <p className="text-[18px] md:text-[18px] font-poppins  mt-6">
+                    <p className="text-[18px] md:text-[18px] font-poppins ml-8 sm:ml-0 mt-6">
                     Project-Based Learning Through Step-By-Step Guided Tutorials
                     </p>
                     {/* button for contact to our sevices */}
@@ -27,11 +27,11 @@ export default function FrontPage() {
 
                 </div>
             </div>
-            <div className="carousel w-[100%]   sm:min-h-screen   border-[2px] shadow-2xl ">
+            <div className="carousel w-[100%]   sm:min-h-screen    shadow-2xl ">
                 <div id="slide5" className="carousel-item w-full">
 
                     <video
-                        className="rounded-lg shadow-lg w-full brightness-[0.4]  h-full"
+                        className="flex mx-auto inset-0 ml-6 sm:ml-0 rounded-xl sm:rounded-none shadow-lg w-full brightness-[0.4]  h-full"
                         autoPlay
                         muted
                         loop

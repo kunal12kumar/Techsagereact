@@ -13,9 +13,9 @@ export default function Features() {
     
 
     return (
-        <div className="min-h-screen mt-52 ">
+        <div className="sm:min-h-screen  mt-20 ">
           
-            <div className=" w-[90%]  sm:w-[65%] sm:h-[400px] overflow-hidden   bg-gradient-to-r from-cyan-500 to-blue-500 rounded-badge mx-auto border-[8px] bg-cover bg-center border-[white]"
+            <div className=" w-[95%]  sm:w-[65%] sm:h-[400px] overflow-hidden  sm:mx-auto ml-8   bg-gradient-to-r from-cyan-500 to-blue-500 rounded-badge mx-auto border-[8px] bg-cover bg-center border-[white]"
             style={{ backgroundImage: `url(${sykwhite})` }}
             >
 
@@ -57,8 +57,7 @@ export default function Features() {
 
             </div>
 
-            <Link to={'/contactus'}><button className=" rounded-full mt-12 mx-auto p-2 items-center justify-center flex text-white h-[50px] sm:w-[40%] sm:text-[20px]  bg-[#3084F2] hover:bg-sky-500 hover:scale-90 font-poppins">Get Your First Free Workshop</button></Link>
-
+            
 
 
 

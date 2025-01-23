@@ -3,7 +3,7 @@ module.exports = {
   darkMode: ["class"],
   content: ["./src/**/*.{html,js}","app/**/*.{js,jsx}", "components/**/*.{js,jsx}"],
   daisyui: {
-    themes: ["light", "dark", "cupcake","garden"],
+    themes: ["light", "dark", "cupcake","garden", "aqua","nord"],
   },
   theme: {
     extend: {
@@ -19,6 +19,13 @@ module.exports = {
         tight: ["Inter Tight", 'sans-serif']
 
 
+
+      },
+      boxshadow:{
+
+        'custom-light': '0 2px 4px rgba(0, 0, 0, 0.1)', // Light shadow
+        'custom-heavy': '0 8px 16px rgba(0, 0, 0, 0.3)', // Heavy shadow
+        'custom-color': '0 4px 6px rgba(255, 0, 0, 0.5)'
 
       },
 

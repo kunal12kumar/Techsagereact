@@ -10,7 +10,7 @@
 }
 
 .projectbox {
-    border: 1px solid black; /* Specify width, style, and color */
+    border: 1px solid rgb(54, 51, 51); /* Specify width, style, and color */
     border-radius: 10px;
     margin: 2px;
     padding: 4px;
@@ -20,6 +20,100 @@
 .projectbox:hover{
     background-color: azure;
 }
+
+
+
+.box{
+    position: relative;
+    width: 380px;
+    height: 400px;
+    background: #4612d4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 400px;
+    background: linear-gradient(0deg,transparent
+    ,transparent,#00eeff,#00eeff,#00eeff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 400px;
+    background: linear-gradient(0deg,transparent,transparent,#00eeff,#00eeff,#00eeff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+.border-line{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.border-line::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 400px;
+    background: linear-gradient(0deg,transparent,transparent,white,white,white);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+.border-line::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 400px;
+    background: linear-gradient(0deg,transparent,transparent,black,black,black);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box form{
+    position: absolute;
+    inset: 4px;
+    background:rgb(22, 151, 206);
+    padding: 50px 40px;
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+/* .box form h2{
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+} */
+
 
 
   

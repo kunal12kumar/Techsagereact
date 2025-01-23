@@ -118,13 +118,13 @@ export default function Signup() {
 
 
     return (
-        <div className="flex font-poppins justify-center items-center min-h-screen bg-gray-100">
+        <div className="flex font-poppins justify-center  items-center min-h-screen bg-gray-100">
             <ToastContainer />
             <form onSubmit={handelSubmit}>
-                <div className="bg-white p-6 rounded-lg shadow-lg w-96">
+                <div className="bg-white p-2  m-7 rounded-lg shadow-lg w-96">
                     <h2 className="text-2xl font-semibold text-gray-800 text-center mb-6">Sign Up</h2>
                 
-                        <div className="mb-4">
+                        <div className="mb-3">
                             <label htmlFor="fullName" className="block text-sm font-medium text-gray-600 mb-1">
                                 Username
                             </label>
@@ -137,7 +137,7 @@ export default function Signup() {
                                 className="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
                             />
                         </div>
-                        <div className="mb-4">
+                        <div className="mb-3">
                             <label htmlFor="email" className="block text-sm font-medium text-gray-600 mb-1">
                                 Email Address
                             </label>
@@ -149,7 +149,7 @@ export default function Signup() {
                                 className="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
                             />
                         </div>
-                        <div className="mb-4">
+                        <div className="mb-3">
                             <label htmlFor="password" className="block text-sm font-medium text-gray-600 mb-1">
                                 Mobile No.
                             </label>
@@ -161,7 +161,7 @@ export default function Signup() {
                                 className="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
                             />
                         </div>
-                        <div className="mb-6">
+                        <div className="mb-3">
                             <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-600 mb-1">
                                 Password
                             </label>
