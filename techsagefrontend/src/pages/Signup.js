@@ -4,6 +4,7 @@ import axios from "axios"
 import 'react-toastify/dist/ReactToastify.css';
 import { Link } from "react-router-dom";
 import Header from "./Header";
+import { Navigate, useNavigate } from "react-router-dom";
 
 
 // Here we are going to define for sign up page 
@@ -13,6 +14,7 @@ import Header from "./Header";
 export default function Signup() {
 
     // to udate the all data 
+    const navigate=useNavigate()
     const [userdata, setuserdata] = useState(
         {
             username: '',
@@ -104,6 +106,7 @@ export default function Signup() {
                 })
 
                 setisotpsent(false)
+                navigate('/log_in')
 
             } catch (error) {
                 toast.error(error.response?.data?.message || 'Failed to verify OTP');

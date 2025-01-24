@@ -1,7 +1,7 @@
 // In this we define the function to save the data of the user
 import User from "../models/user.js";
 import bcrypt from "bcryptjs";
-import { veriyemail } from "../lib/verifyemail.js";
+
 import nodemailer from "nodemailer";
 
 export const UserSignup = async (req, res) => {

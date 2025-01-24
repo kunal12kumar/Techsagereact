@@ -84,7 +84,7 @@ export default function SignIn() {
         localStorage.setItem("token", token);   //storing token in localStorage to use it latter
         console.log(token)
         toast.success(response.data.message);
-        navigate('/profile')
+        navigate('/',{state:{message:"Welcome To TechsageLabs"}})
 
       }
     } catch (error) {
@@ -128,7 +128,7 @@ export default function SignIn() {
                 type="email"
                 id="email"
                 placeholder="johndoe@gmail.com"
-                autocomplete="new-password"
+                autoComplete="new-email"
                 className="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
               />
             </div>
@@ -142,7 +142,7 @@ export default function SignIn() {
                 type="password"
                 id="Password"
                 placeholder=" Password"
-                autocomplete="new-password"
+                autoComplete="new-password"
                 className="w-full px-4 py-2 border rounded-lg  text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
               />
             </div>

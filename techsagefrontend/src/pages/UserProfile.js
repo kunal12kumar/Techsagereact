@@ -3,7 +3,7 @@ import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Header from "./Header";
-import { ToastContainer,toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 
 // defining the userfunction 
 
@@ -15,6 +15,7 @@ export default function UserProfile() {
     const [orders, setOrders] = useState([]);
 
     const navigate = useNavigate();
+
     useEffect(() => {
         // Get token from localStorage
         const token = localStorage.getItem("token");
@@ -59,19 +60,46 @@ export default function UserProfile() {
     }
     // for logout button
 
-    const handleLogout = () => {
-        // Remove the token from localStorage
+    const handleLogout = async () => {
 
-        localStorage.removeItem("token");
 
-        // Optionally clear other user-related data from storage
-        localStorage.removeItem("user");
+        try {
+            const token = localStorage.getItem("token");
 
-        // Navigate to the login page
-        navigate("/log_in");
+            if (!token) {
+                toast.error("No token found for logout.");
+                return;
+            }
 
-        // Optionally, show a message
-        toast.success("You have been logged out!");
+            // Send the logout request to the backend
+            const response = await axios.post("http://localhost:8000/api/RUserlogout/logout",
+                {}, // Empty body
+                {
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                    },
+                }
+            );
+
+            // Clear localStorage
+            localStorage.removeItem("token");
+            localStorage.removeItem("user");
+            // Optionally, show a message
+           
+
+
+            // Navigate to the login page
+            // navigate("/log_in");
+            // console.log(response.data.message);
+            navigate("/", { state: { message: "You have been logged out!" } });
+
+
+            // Show success message
+            
+        } catch (error) {
+            console.error("Logout error:", error);
+            toast.error("An error occurred during logout. Please try again.");
+        }
     };
 
     return (
@@ -135,7 +163,7 @@ export default function UserProfile() {
 
                 <div onClick={handleLogout} className="border-white cursor-pointer border-[2px] flex justify-center items-center shadow-md w-[20%] rounded-md p-2 ">
                     Log Out
-                   
+
 
                 </div>
             </div>
