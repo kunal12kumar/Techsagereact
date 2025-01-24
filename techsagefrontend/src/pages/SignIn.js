@@ -4,8 +4,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import axios from "axios"
 import 'react-toastify/dist/ReactToastify.css';
 import { Link } from "react-router-dom";
-import './animation.css';
 import Header from "./Header";
+import maxkit from "../image/maxkit.jpg"
 
 
 
@@ -84,7 +84,7 @@ export default function SignIn() {
         localStorage.setItem("token", token);   //storing token in localStorage to use it latter
         console.log(token)
         toast.success(response.data.message);
-        navigate('/',{state:{message:"Welcome To TechsageLabs"}})
+        navigate('/', { state: { message: "Welcome To TechsageLabs" } })
 
       }
     } catch (error) {
@@ -112,15 +112,24 @@ export default function SignIn() {
   return (
     <div>
       <Header></Header>
-    <div className="flex font-poppins   justify-center items-center min-h-screen bg-gray-100">
       <ToastContainer />
-      
-        <form  className=" w-full flex justify-center mt-14 items-center" onSubmit={handelSubmit}>
-          <div className="  bg-[white] rounded-lg w-[40%] p-8">
-            <h2 className="text-2xl font-semibold text-black text-center ">Log In</h2>
+      <div className="flex font-poppins justify-center items-center sm:pt-20 min-h-screen ">
+        {/* Animated Borders */}
+
+
+
+
+
+
+
+
+
+        <form className="w-[85%]  rounded-lg sm:w-[50%] border-[2px] border-[black]" onSubmit={handelSubmit} >
+          <div className="  rounded-lg p-8 z-10">
+            <h2 className="text-2xl font-semibold  text-center mb-6">Log In</h2>
 
             <div className="mb-4">
-              <label htmlFor="email" className="block text-sm font-medium text-[black] mb-1">
+              <label htmlFor="email" className="block text-sm font-medium text-gray-600 mb-1">
                 Email Address
               </label>
               <input
@@ -128,8 +137,7 @@ export default function SignIn() {
                 type="email"
                 id="email"
                 placeholder="johndoe@gmail.com"
-                autoComplete="new-email"
-                className="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+                className="w-full px-4 py-2 border rounded-lg  focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
               />
             </div>
 
@@ -142,15 +150,15 @@ export default function SignIn() {
                 type="password"
                 id="Password"
                 placeholder=" Password"
-                autoComplete="new-password"
-                className="w-full px-4 py-2 border rounded-lg  text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+                autocomplete="new-password"
+                className="w-full px-4 py-2 border rounded-lg  focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
               />
             </div>
             {/* for otp */}
             <div className="flex w-[70%] justify-center mx-auto flex-row gap-2">
 
 
-              <button className="w-[60%] h-[35px] mx-auto bg-  rounded-lg placeholder:text-center hover:border-[2px] bg-[#3084F2] hover:scale-95 hover:border-[white] text-center text-white text-red   ">Submit</button>
+              <button className="w-40 py-2 bg-pink-600 text-white rounded-full font-semibold hover:bg-pink-700 transition">Submit</button>
             </div>
             {/* <button
                             
@@ -177,9 +185,10 @@ export default function SignIn() {
             </p>
           </div>
         </form>
+
       </div>
-      </div>
-    
+    </div>
+
   );
 };
 

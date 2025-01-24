@@ -5,6 +5,7 @@ import sykwhite from "../image/bluewhite.jpg";
 import gridlines from "../image/gridpattern.jpg";
 import innovatorboxplus from "../image/innovator-box-plus.jpg";
 import Header from "./Header";
+import minikit from "../image/maxkit.jpg"
 
 
 import "./animation.css"
@@ -86,10 +87,12 @@ export default function Kitboxes() {
                     <div className=" border-[3px] rounded-2xl border-[black] bg-cover bg-white   "
                     >
                         {/* <input type="checkbox" /> */}
-                        <div className=" text-xl h-[250px] font-medium mx-auto">
+                        <div className=" text-xl w-full h-[250px] font-medium mx-auto">
 
                             <h1 className="text-3xl flex mt-4 justify-center items-center">Innovator Box Plus</h1>
                             <button className="border-[1px] w-[50%] text-center h-[40px] mx-auto items-center flex justify-center bg-[#3e6bdc] border-[black] mt-8 rounded-2xl py-4 text-2xl font-roboto hover:scale-90" >Buy now</button>
+
+                          
                             
 
 
