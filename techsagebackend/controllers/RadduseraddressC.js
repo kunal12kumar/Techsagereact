@@ -1,5 +1,6 @@
-
+// this also contain the fuction of live location 
 import Address from "../models/UserAddress.js";
+import axios from "axios"
 
 // Add a new product
 export const addUserAddress = async (req, res) => {
@@ -71,3 +72,46 @@ export const findaddressofUserbyid= async (req,res)=>{
     }
 
 }
+
+// now get live location and add the address to the current address list 
+
+export const Getlivelocation=async (req, res) => {
+    const { lat, lng } = req.body;
+    console.log(lat,lng)
+  
+    if (!lat || !lng) {
+      return res.status(400).json({ error: "Latitude and Longitude are required" });
+    }
+  
+    try {
+      // Use OpenCage API for reverse geocoding
+      const response = await axios.get('https://api.opencagedata.com/geocode/v1/json', {
+        params: {
+          key: process.env.OPENCAGE_API_KEY, // Make sure your API key is available here
+          q: `${lat},${lng}` // Query with latitude and longitude
+        }
+      });
+ 
+  
+      const results = response.data.results;
+      console.log(results)
+      const newpincode = response.data.results[0].components.postcode;
+    console.log("Pincode:", newpincode);
+  
+      // Extract the postal code from the components
+      const addressComponent = results
+        .flatMap((result) => result.components)
+        .find((component) => component.postcode);
+  
+      const pincode = addressComponent ? addressComponent.postcode : null;
+  
+      if (pincode) {
+        return res.json({ pincode });
+      } else {
+        return res.status(404).json({ error: "Pincode not found" });
+      }
+    } catch (error) {
+      console.error("Error fetching pincode:", error.message);
+      res.status(500).json({ error: "Internal Server Error" });
+    }
+  }

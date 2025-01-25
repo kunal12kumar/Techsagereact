@@ -163,10 +163,11 @@ export default function UserProfile() {
                 navigator.geolocation.getCurrentPosition(
                     async (position) => {
                         const { latitude, longitude } = position.coords;
+                        console.log(latitude,longitude)
                         setLocation({ latitude, longitude });
 
                         try {
-                            const response = await axios.post("http://localhost:9000/api/RAddtocart/getlivelocation", {
+                            const response = await axios.post("http://localhost:8000/api/RAdduseraddress/getlivelocation", {
                                 lat: latitude,
                                 lng: longitude,
                             }, {

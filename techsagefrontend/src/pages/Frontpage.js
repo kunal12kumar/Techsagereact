@@ -2,6 +2,7 @@ import React from "react";
 import arduino from '../image/firstyou.jpg'
 import roboticsvideo from '../video/techsagevideo.mp4'
 import { Link } from "react-router-dom";
+import robot1emoji from '../image/Robot-Emoji-PNG 1.png'
 
 
 export default function FrontPage() {
@@ -14,8 +15,9 @@ export default function FrontPage() {
 
             <div className=" sm:absolute sm:z-[2] inset-0 sm:text-white sm:min-h-screen sm:py-28 pt-36  pb-8  flex items-center justify-center">
                 <div className="text-center  ">
-                    <h1 className="text-5xl ml-8 sm:ml-0 md:text-6xl font-lato font-[800]  mb-4">
-                        Build Your First Robot 
+                    <h1 className="sm:text-[126px] text-5xl  ml-8 sm:flex  sm:ml-0 md:text-6xl font-lato mb-4  font-[900]  ">
+                        <h1 className="sm:mt-6 ">Build Your First Robot </h1>
+                        <img src={robot1emoji} className="sm:w-[120px] sm:ml-3 w-[100px]  mx-auto sm:h-[100px]"></img>
                     </h1>
                     
                     <p className="text-[18px] md:text-[18px] font-poppins ml-8 sm:ml-0 mt-6">
@@ -23,7 +25,7 @@ export default function FrontPage() {
                     </p>
                     {/* button for contact to our sevices */}
 
-                    <Link to={'/contactus'}><button className=" rounded-full mt-12 text-white h-[50px] px-4 sm:w-[50%] text-[20px]  font-poppins bg-[#3084F2] hover:bg-sky-500 hover:scale-90">Get Your First Robotics Kit</button></Link>
+                    <Link to={'/contactus'}><button className=" rounded-full mt-12 text-white h-[50px] px-4 sm:w-[45%] text-[20px]  font-poppins bg-[#3084F2] hover:bg-sky-500 hover:scale-90">Get Your First Robotics Kit</button></Link>
 
                 </div>
             </div>
