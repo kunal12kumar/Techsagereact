@@ -31,9 +31,10 @@ export default function Home(){
             <Header></Header>
             <FrontPage></FrontPage>
             <Kitboxes></Kitboxes>
+            <Techsagework></Techsagework>
             <Features></Features>
             <Newfeatures></Newfeatures>
-            <Techsagework></Techsagework>
+            
             <Techsageltd></Techsageltd>
             {/* <Signup></Signup> */}
             <Footer></Footer>

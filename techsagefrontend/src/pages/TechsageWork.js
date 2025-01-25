@@ -23,7 +23,7 @@ const Techsagework = () => {
   ];
 
   return (
-    <div className=" grid grid-cols-1 sm:grid-cols-3 gap-8 px-4 sm:px-16 py-10">
+    <div className=" grid grid-cols-1 bg-white pt-20 sm:grid-cols-3 gap-8 px-4 sm:px-16 py-10">
       {steps.map((step) => (
         <div key={step.id} className="text-center">
           <div className="flex items-center justify-center w-12 h-12 bg-yellow-400 rounded-full text-white text-lg font-bold mx-auto">

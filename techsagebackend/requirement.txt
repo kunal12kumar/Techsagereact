@@ -4,6 +4,5 @@ zod;
 CORS;
 mongoose;
 mongodb;
-bcryptjs;
-resend;
+bcrypt.js;
 nodemailer;

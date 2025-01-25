@@ -10,6 +10,7 @@ module.exports = {
       
       fontFamily: {
         urbanist: ['Urbanist', 'sans-serif'],
+        outfit:["Outfit","sans-serif"]
 
 
 

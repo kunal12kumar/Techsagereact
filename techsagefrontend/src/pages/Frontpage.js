@@ -1,5 +1,5 @@
 import React from "react";
-import arduino from '../image/firstyou.jpg'
+
 import roboticsvideo from '../video/techsagevideo.mp4'
 import { Link } from "react-router-dom";
 import robot1emoji from '../image/Robot-Emoji-PNG 1.png'
@@ -16,7 +16,7 @@ export default function FrontPage() {
             <div className=" sm:absolute sm:z-[2] inset-0 sm:text-white sm:min-h-screen sm:py-28 pt-36  pb-8  flex items-center justify-center">
                 <div className="text-center  ">
                     <h1 className="sm:text-[126px] text-5xl  ml-8 sm:flex  sm:ml-0 md:text-6xl font-lato mb-4  font-[900]  ">
-                        <h1 className="sm:mt-6 ">Build Your First Robot </h1>
+                        <h1 className="sm:mt-6 font-urbanist ">Build Your First Robot </h1>
                         <img src={robot1emoji} className="sm:w-[120px] sm:ml-3 w-[100px]  mx-auto sm:h-[100px]"></img>
                     </h1>
                     

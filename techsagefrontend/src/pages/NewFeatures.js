@@ -5,16 +5,13 @@ import ai from "../image/Ai.png";
 import code from '../image/code.png';
 import support from '../image/support.png';
 import collaboration from '../image/collaboration.png';
-import bluewhite from "../image/bluewhite.jpg";
-import skywhite from "../image/skywhite.jpg";
-import bubbles from "../image/bubbles.jpg";
-import bluclouds from "../image/bluecloud.jpg";
+
 import "./animation.css";
 
 export default function Newfeatures() {
 
     return (
-        <div className=" py-8  mih-h-screen">
+        <div className=" py-8  mih-h-screen bg-white">
 
             {/* section for new features */}
 
@@ -23,7 +20,7 @@ export default function Newfeatures() {
                 
             </div>
             
-            <div className="sm:w-[70%] h-auto grid md:grid-cols-2 ml-8 sm:mx-auto gap-y-12 justify-items-center  mx-auto font-poppins">
+            <div className="sm:w-[70%] h-auto grid md:grid-cols-3 ml-8 sm:mx-auto gap-y-12 justify-items-center  mx-auto font-poppins">
 
                 
 

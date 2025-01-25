@@ -13,7 +13,7 @@ export default function Header() {
     return (
 
         // creating header 
-        <div className="navbar  w-[98%] sm:w-[70%]   rounded-full z-[4] mx-auto inset-x-0 font-clash fixed mt-8 bg-zinc-800">
+        <div className="flex justify-around p-2  w-[98%] sm:w-[70%]   rounded-full z-[4] mx-auto inset-x-0 font-clash fixed mt-8 bg-zinc-800">
 
             <div className="drawer ">
                 <input id="my-drawer" type="checkbox" className="drawer-toggle " />
@@ -32,9 +32,9 @@ export default function Header() {
                             d="M4 6h16M4 12h16M4 18h7" />
                     </svg></label>
                 </div>
-                <div className="drawer-side ">
-                    <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay "></label>
-                    <ul className="menu bg-[black] flex justify-center text-white  text-2xl  min-h-full w-[320px]  gap-2">
+                <div className="drawer-side  ">
+                    <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay bg-black "></label>
+                    <ul className="menu bg-black  flex justify-center text-white  text-2xl  min-h-full w-[320px]  gap-2">
                         {/* Sidebar content here */}
                         {/* <img className="h-[300px] " src={logo}></img> */}
 
@@ -56,7 +56,7 @@ export default function Header() {
                 </div>
             </div>
             <div className="mx-2">
-                <Link to={'/'}><h1 className="  font-urbanist font-[600]  text-white text-2xl">Techsage</h1></Link>
+                <Link to={'/'}><h1 className="  font-urbanist font-[800]  text-white text-4xl">Techsage</h1></Link>
             </div>
 
 
@@ -65,7 +65,7 @@ export default function Header() {
                     <Link to="/profile"><h1 className="btn btn-md border-[#3285FF] hover:bg-[#3285FF] bg-[#3285FF] rounded-full  w-[110px]" >Profile</h1></Link>
                 ) : (
                     <div className="dropdown dropdown-end ">
-                        <Link to={'/log_in'}><div tabIndex={0} role="button" className="btn font-poppins  btn-md w-[90px] rounded-full ">
+                        <Link to={'/signup'}><div tabIndex={0} role="button" className="btn font-urbanist text-white text-xl  btn-md  border-[#3285FF] hover:bg-[#3285FF] bg-[#3285FF] rounded-full  w-[110px] ">
                             {/* <div className="w-4 rounded-full">
                             <img
                                 alt="Tailwind CSS Navbar component"
@@ -74,7 +74,7 @@ export default function Header() {
                            
                         </div> */}
 
-                            Log In
+                            Sign Up
                         </div></Link>
 
                     </div>
