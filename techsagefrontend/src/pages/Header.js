@@ -13,12 +13,13 @@ export default function Header() {
     return (
 
         // creating header 
-        <div className="navbar w-[98%] sm:w-[70%]   rounded-full z-[4] mx-auto inset-x-0 font-clash fixed mt-8 bg-zinc-800">
-            <div className="drawer ml-4">
+        <div className="navbar  w-[98%] sm:w-[70%]   rounded-full z-[4] mx-auto inset-x-0 font-clash fixed mt-8 bg-zinc-800">
+
+            <div className="drawer ">
                 <input id="my-drawer" type="checkbox" className="drawer-toggle " />
-                <div className="drawer-content">
+                <div className="drawer-content ">
                     {/* Page content here */}
-                    <label htmlFor="my-drawer" className="btn bg-[black] border-[black] btn-primary drawer-button"><svg
+                    <label htmlFor="my-drawer" className="btn bg-[black] border-[black] btn-primary rounded-full drawer-button"><svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-8 w-8 text-white rounded-lg"
                         fill="none"
@@ -54,18 +55,18 @@ export default function Header() {
                     </ul>
                 </div>
             </div>
-            <div className="flex-1">
-                <Link to={'/'}><h1 className="  font-roboto mx-5  text-white text-2xl">techsage</h1></Link>
+            <div className="mx-2">
+                <Link to={'/'}><h1 className="  font-urbanist font-[600]  text-white text-2xl">Techsage</h1></Link>
             </div>
-            <div className="flex sm:gap-6  sm:justify-between">
 
-                <div className="text-xl hover:scale-110 justify-center flex items-center">
-                    {islogedin ? (
-                        <Link to="/profile"><h1 className="btn btn-md rounded-full w-[90px]" >Profile</h1></Link>
-                    ) : (
-                        <div className="dropdown dropdown-end ">
-                            <Link to={'/log_in'}><div tabIndex={0} role="button" className="btn font-poppins  btn-md w-[90px] rounded-full ">
-                                {/* <div className="w-4 rounded-full">
+
+            <div className="text-xl hover:scale-110 justify-center  flex items-center">
+                {islogedin ? (
+                    <Link to="/profile"><h1 className="btn btn-md border-[#3285FF] hover:bg-[#3285FF] bg-[#3285FF] rounded-full  w-[110px]" >Profile</h1></Link>
+                ) : (
+                    <div className="dropdown dropdown-end ">
+                        <Link to={'/log_in'}><div tabIndex={0} role="button" className="btn font-poppins  btn-md w-[90px] rounded-full ">
+                            {/* <div className="w-4 rounded-full">
                             <img
                                 alt="Tailwind CSS Navbar component"
                                 src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
@@ -73,18 +74,19 @@ export default function Header() {
                            
                         </div> */}
 
-                                Log In
-                            </div></Link>
+                            Log In
+                        </div></Link>
 
-                        </div>
-                        // <Link to={'/sign_up'}><img className=" h-10 w-10 mt-1 " src={loginuser}></img></Link>
-                    )}
+                    </div>
+                    // <Link to={'/sign_up'}><img className=" h-10 w-10 mt-1 " src={loginuser}></img></Link>
+                )}
 
 
-                </div>
+
 
 
             </div>
+
         </div>
     )
 }

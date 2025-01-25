@@ -9,14 +9,7 @@ module.exports = {
     extend: {
       
       fontFamily: {
-        roboto: ['Roboto', 'sans-serif'] ,// Add your custom font here
-        lato: ['Lato', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
-        clash: ['ClashGrotesk-Extralight', 'sans-serif'],
-        Ubuntu:['Ubuntu', 'sans-serif'],
-        passion: ["Passion One", 'sans-serif'],
-        new: ["Playwrite AU SA", 'serif'],
-        tight: ["Inter Tight", 'sans-serif']
+        urbanist: ['Urbanist', 'sans-serif'],
 
 
 
