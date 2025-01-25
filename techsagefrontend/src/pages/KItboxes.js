@@ -1,11 +1,8 @@
 // This component contain the Kit boxes infromation and the projects which can be developed by that kit baoxes
 
 import React from "react";
-import sykwhite from "../image/bluewhite.jpg";
-import gridlines from "../image/gridpattern.jpg";
-import innovatorboxplus from "../image/innovator-box-plus.jpg";
-import Header from "./Header";
-import minikit from "../image/maxkit.jpg"
+import curveline from "../image/curved line.png"
+
 
 
 import "./animation.css"
@@ -23,14 +20,25 @@ export default function Kitboxes() {
     return (
 
         // IN this we will create two boxes when we click on that box it will open with containg the list of all projects that can be build by that projects
-        
+
 
 
 
         <div className="min-h-screen ">
             {/* first box having  Name : Innovator Box Mini*/}
+            <div className="flex flex-row mx-auto  gap-2 justify-center">
 
-            <h1 className=" text-2xl sm:text-5xl text-center font-semibold rounded-full mt-20 mx-auto items-center justify-center flex text-black ml-4 sm:ml-0 font-passion">Learn Robotics With Innovator Box</h1>
+                <h1 className="text-2xl  sm:text-5xl   font-semibold rounded-full mt-20  text-black  sm:ml-0 ">Learn Robotics With</h1>
+                <span className=" flex flex-col text-2xl sm:text-5xl font-semibold rounded-full mt-20 text-black  sm:ml-0"> Innovator Box
+                    <img src={curveline} className="sm:w-full w-[100%]    h-[40px] "/>
+                   
+
+                </span>
+
+
+
+
+            </div>
 
             <div className="flex sm:flex-row flex-col ml-8 sm:ml-0 min-w-full gap-10 justify-center mt-10" >
 
@@ -42,7 +50,7 @@ export default function Kitboxes() {
 
                             <h1 className="text-3xl flex mt-4 justify-center items-center">Innovator Box Plus</h1>
                             <button className="border-[1px] w-[50%] text-center h-[40px] mx-auto items-center flex justify-center bg-[#3e6bdc] border-[black] mt-8 rounded-2xl py-4 text-2xl font-roboto hover:scale-90" >Buy now</button>
-                            
+
 
 
                         </div>
@@ -75,7 +83,7 @@ export default function Kitboxes() {
 
                     </div>
                     <div>
-                        
+
 
 
                     </div>
@@ -92,8 +100,8 @@ export default function Kitboxes() {
                             <h1 className="text-3xl flex mt-4 justify-center items-center">Innovator Box Plus</h1>
                             <button className="border-[1px] w-[50%] text-center h-[40px] mx-auto items-center flex justify-center bg-[#3e6bdc] border-[black] mt-8 rounded-2xl py-4 text-2xl font-roboto hover:scale-90" >Buy now</button>
 
-                          
-                            
+
+
 
 
                         </div>
@@ -123,19 +131,19 @@ export default function Kitboxes() {
 
                         </div>
                     </div>
-                    
-                    
+
+
                 </div>
 
                 {/* second box having Name: Innovator Box Plus */}
-                
+
 
 
             </div>
-            </div>
+        </div>
 
 
-        
+
 
 
     )
