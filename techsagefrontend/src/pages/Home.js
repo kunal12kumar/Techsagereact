@@ -17,12 +17,12 @@ export default function Home(){
     // if notification comes then this happens
     const location = useLocation();
 
-    useEffect(() => {
-        if (location.state?.message) {
-            toast.success(location.state.message);
-            console.log(location.state.message)
-        }
-    }, [location.state]);
+    // useEffect(() => {
+    //     if (location.state?.message) {
+    //         toast.success(location.state.message);
+    //         console.log(location.state.message)
+    //     }
+    // }, [location.state]);
 
 
     return(
@@ -35,7 +35,6 @@ export default function Home(){
             <Features></Features>
             <Newfeatures></Newfeatures>
             
-            <Techsageltd></Techsageltd>
             {/* <Signup></Signup> */}
             <Footer></Footer>
             

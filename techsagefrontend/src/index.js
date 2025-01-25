@@ -13,6 +13,8 @@ import Tutorial from './pages/Tutorial';
 import UserProfile from './pages/UserProfile';
 import Kitboxes from './pages/KItboxes';
 import AddressForm from './pages/UserAddressform';
+import TermsAndConditions from './pages/Termandconditions';
+import PrivacyPolicies from './pages/Privacypolicy';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let allrouter = createBrowserRouter([
@@ -52,6 +54,14 @@ let allrouter = createBrowserRouter([
   {
     path:'/profile/addAddress',
     element:<AddressForm></AddressForm>
+  },
+  {
+    path:'/terms_and_conditions',
+    element:<TermsAndConditions></TermsAndConditions>
+  },
+  {
+    path:'privacy_policies',
+    element:<PrivacyPolicies></PrivacyPolicies>
   }
   
 

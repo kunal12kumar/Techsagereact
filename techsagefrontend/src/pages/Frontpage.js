@@ -20,12 +20,12 @@ export default function FrontPage() {
                         <img src={robot1emoji} className="sm:w-[120px] sm:ml-3 w-[100px]  mx-auto sm:h-[100px]"></img>
                     </h1>
                     
-                    <p className="text-[18px] md:text-[18px] font-poppins ml-8 sm:ml-0 mt-6">
-                    Project-Based Learning Through Step-By-Step Guided Tutorials
+                    <p className="text-[18px] md:text-[18px] font-urbanist ml-8 sm:ml-0 mt-6">
+                    Project-Based Learning Through Step-By-Step Guided Tutorials
                     </p>
                     {/* button for contact to our sevices */}
 
-                    <Link to={'/contactus'}><button className=" rounded-full mt-12 text-white h-[50px] px-4 sm:w-[45%] text-[20px]  font-poppins bg-[#3084F2] hover:bg-sky-500 hover:scale-90">Get Your First Robotics Kit</button></Link>
+                    <Link to={'/kitboxes'}><button className=" rounded-full mt-12 text-white h-[50px] px-4 sm:w-[45%] text-[20px]  font-poppins bg-[#3084F2] hover:bg-sky-500 hover:scale-90">Get Your First Robotics Kit</button></Link>
 
                 </div>
             </div>

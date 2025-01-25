@@ -1,8 +1,9 @@
 import React from "react";
 import instagram from "../image/instagram-logo.png";
-import facebook from "../image/facebook-logo.png";
+import youtube from "../image/icons8-youtube-48.png";
 import x from "../image/x-logo.png";
 import linkedin from "../image/linkedin.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
 
@@ -38,13 +39,13 @@ export default function Footer() {
                     <a href="#" className="text-gray-600 hover:text-blue-500">
                         <img src={x} alt="X" className="w-10 h-10" />
                     </a>
-                    <a href="#" className="text-gray-600 hover:text-blue-500">
-                        <img src={facebook} alt="Facebook" className="w-10 h-10" />
+                    <a href="https://www.youtube.com/@techsageInc" className="text-gray-600 hover:text-blue-500">
+                        <img src={youtube} alt="Facebook" className="w-13  h-13" />
                     </a>
-                    <a href="#" className="text-gray-600 hover:text-blue-500">
+                    <a href="https://www.instagram.com/techsagelabs" className="text-gray-600 hover:text-blue-500">
                         <img src={instagram} alt="Instagram" className="w-10 h-10" />
                     </a>
-                    <a href="#" className="text-gray-600 hover:text-blue-500">
+                    <a href="https://www.linkedin.com/company/techsagelabs/" className="text-gray-600 hover:text-blue-500">
                         <img src={linkedin} alt="LinkedIn" className="w-10 h-10" />
                     </a>
                 </div>
@@ -75,9 +76,10 @@ export default function Footer() {
                     <div className="w-1/3 md:w-auto">
                         <h3 className="font-semibold text-2xl mb-2">Pages</h3>
                         <ul className="text-xl">
-                            <li><a href="#" className="hover:text-blue-500">Home</a></li>
-                            <li><a href="#" className="hover:text-blue-500">Contact</a></li>
-                            <li><a href="#" className="hover:text-blue-500">Privacy Policy</a></li>
+                            <Link to={'/'}><li className="hover:text-blue-500">Home</li></Link>
+                            <Link to={'/'}><li className="hover:text-blue-500">Contact</li></Link>
+                            <Link to={'/privacy_policies'}><li className="hover:text-blue-500">Privacy Policy</li></Link>
+                            <Link to={'/terms_and_conditions'}><li className="hover:text-blue-500">Terms</li></Link>
                             
                         </ul>
                     </div>
