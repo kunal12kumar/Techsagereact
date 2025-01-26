@@ -39,14 +39,14 @@ export default function Kitboxes() {
 
 
         <div>
-            <Header></Header>
+            
 
-            <div className="min-h-screen py-6 bg-white ">
+            <div className="min-h-screen  bg-white ">
                 {/* first box having  Name : Innovator Box Mini*/}
                 <div className="flex flex-row mx-auto  gap-2 justify-center">
 
-                    <h1 className="text-2xl  sm:text-5xl font-urbanist  font-[900] rounded-full mt-20  text-black  sm:ml-0 ">Learn Robotics With</h1>
-                    <span className=" flex flex-col text-2xl sm:text-5xl font-[900] font-urbanist rounded-full mt-20 text-black  sm:ml-0"> Innovator Box
+                    <h1 className="text-xl  sm:text-5xl font-urbanist  font-[900] rounded-full mt-20  text-black  sm:ml-0 ">Learn Robotics With</h1>
+                    <span className=" flex flex-col text-xl sm:text-5xl font-[900] font-urbanist rounded-full mt-20 text-black  sm:ml-0"> Innovator Box
                         <img src={curveline} className="sm:w-full w-[100%]    h-[40px] " />
 
 
@@ -60,12 +60,12 @@ export default function Kitboxes() {
                 <div className="flex sm:flex-row flex-col ml-8 sm:ml-0 min-w-full gap-20 justify-center mt-10" >
 
                     <div className=" w-[90%] sm:w-[25%]">
-                        <div className="border-[3px] rounded-2xl h-[690px] sm:h-[70%]  border-[#3C315B] bg-cover bg-[#F3F1FC]   "
+                        <div className="border-[3px] rounded-2xl h-[700px] sm:h-[70%]  border-[#3C315B] bg-cover bg-[#F3F1FC]   "
                         >
                             {/* <input type="checkbox" /> */}
                             <div className=" text-xl  font-medium mx-auto">
 
-                                <h1 className="text-3xl flex mt-4 font-urbanist text-[#  text-[#3C315B]3C315B] font-[700] justify-center items-center">Innovator Box Mini </h1>
+                                <h1 className="text-3xl flex mt-4 font-urbanist   text-[#3C315B] font-[700] justify-center items-center">Innovator Box Mini </h1>
                                 <img
                                     src={minibox}
                                     alt="Innovator Box Mini"
@@ -141,7 +141,7 @@ export default function Kitboxes() {
 
                     <div className=" w-[90%]  sm:w-[30%]">
 
-                        <div className=" border-[3px] rounded-2xl h-[820px] sm:h-[90%] border-[#470006] bg-cover bg-[#FFDADD]   "
+                        <div className=" border-[3px] rounded-2xl h-[838px] sm:h-[90%] border-[#470006] bg-cover bg-[#FFDADD]   "
                         >
                             {/* <input type="checkbox" /> */}
                             <div className=" text-xl w-full  font-medium mx-auto">
