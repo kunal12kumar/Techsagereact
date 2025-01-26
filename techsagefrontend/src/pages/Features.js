@@ -14,9 +14,9 @@ export default function Features() {
     
 
     return (
-        <div className=" bg-white pt-20 ">
+        <div className=" bg-white w-full pt-20 ">
           
-            <div className=" w-[90%]  sm:w-[100%] sm:h-[400px] overflow-hidden  sm:mx-auto ml-8     mx-auto  bg-cover "
+            <div className=" w-[100%]  sm:w-[100%] sm:h-[400px] overflow-hidden  sm:mx-auto      mx-auto  bg-cover "
             style={{ backgroundImage: `url(${bluedot})` }}
             >
 
