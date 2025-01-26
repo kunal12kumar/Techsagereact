@@ -23,7 +23,11 @@ server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
 
 // Enable CORS and JSON parsing
-server.use(cors({ credentials: true }));
+server.use(cors({
+    origin: process.env.CLIENT_URL || "https://techsagelabs.in/",
+    credentials: true, // Include credentials like cookies
+}));
+
 server.use(express.json());
 
 const database=  dbconnect();

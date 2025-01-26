@@ -41,11 +41,11 @@ export default function Kitboxes() {
         <div>
             
 
-            <div className="min-h-screen  bg-white ">
+            <div className="min-h-screen   bg-white ">
                 {/* first box having  Name : Innovator Box Mini*/}
                 <div className="flex flex-row mx-auto  gap-2 justify-center">
 
-                    <h1 className="text-xl  sm:text-5xl font-urbanist  font-[900] rounded-full mt-20  text-black  sm:ml-0 ">Learn Robotics With</h1>
+                    <h1 id="InnovatorBox"  className="text-xl  sm:text-5xl font-urbanist  font-[900] rounded-full mt-20  text-black  sm:ml-0 ">Learn Robotics With</h1>
                     <span className=" flex flex-col text-xl sm:text-5xl font-[900] font-urbanist rounded-full mt-20 text-black  sm:ml-0"> Innovator Box
                         <img src={curveline} className="sm:w-full w-[100%]    h-[40px] " />
 

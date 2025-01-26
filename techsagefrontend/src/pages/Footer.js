@@ -77,7 +77,7 @@ export default function Footer() {
                         <h3 className="font-semibold text-2xl mb-2">Pages</h3>
                         <ul className="text-xl">
                             <Link to={'/'}><li className="hover:text-blue-500">Home</li></Link>
-                            <Link to={'/'}><li className="hover:text-blue-500">Contact</li></Link>
+                            <Link to={'/contactus'}><li className="hover:text-blue-500">Contact</li></Link>
                             <Link to={'/privacy_policies'}><li className="hover:text-blue-500">Privacy Policy</li></Link>
                             <Link to={'/terms_and_conditions'}><li className="hover:text-blue-500">Terms</li></Link>
                             

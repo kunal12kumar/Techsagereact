@@ -136,6 +136,7 @@ const AddressForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        const API_BASE_URL = process.env.REACT_APP_API_URL
         // Add form validation and submission logic here
         console.log("Form submitted:", formData);
         console.log(formData.name)
@@ -159,7 +160,7 @@ const AddressForm = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:8000/api/RAdduseraddress/addinguseraddress', {
+            const response = await axios.post(`${API_BASE_URL}/RAdduseraddress/addinguseraddress`, {
                 name: formData.name,
                 mobile: formData.mobile,
                 pincode: formData.pincode,

@@ -44,6 +44,7 @@ export default function Signup() {
 
     const handelSubmit = async (event) => {
         event.preventDefault();
+        const API_BASE_URL = process.env.REACT_APP_API_URL
 
 
 
@@ -63,7 +64,7 @@ export default function Signup() {
 
             // now calling the api to send the otp and verifying the user to save into the database
             try {
-                const response = await axios.post('http://localhost:8000/api/Rsignupuser/usersignup', {
+                const response = await axios.post(`${API_BASE_URL}/Rsignupuser/usersignup`, {
                     username: userdata.username,
                     email: userdata.email,
                     mobileno: userdata.mobileno,
@@ -83,7 +84,7 @@ export default function Signup() {
         }
         else {
             try {
-                const response = await axios.post('http://localhost:8000/api/Rverifycode/verifycode', {
+                const response = await axios.post(`${API_BASE_URL}/Rverifycode/verifycode`, {
                     username: userdata.username,
                     email: userdata.email,
                     mobileno: userdata.mobileno,

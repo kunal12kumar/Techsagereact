@@ -95,6 +95,7 @@ export default function UserProfile() {
     // for logout button
 
     const handleLogout = async () => {
+        const API_BASE_URL = process.env.REACT_APP_API_URL
 
 
         try {
@@ -106,7 +107,7 @@ export default function UserProfile() {
             }
 
             // Send the logout request to the backend
-            const response = await axios.post("http://localhost:8000/api/RUserlogout/logout",
+            const response = await axios.post(`${API_BASE_URL}/RUserlogout/logout`,
                 {}, // Empty body
                 {
                     headers: {
@@ -139,6 +140,7 @@ export default function UserProfile() {
 
     // Now to check the location of the user or they can give there location itself
     const getlivelocation = async () => {
+        const API_BASE_URL = process.env.REACT_APP_API_URL
 
         try {
 
@@ -167,7 +169,7 @@ export default function UserProfile() {
                         setLocation({ latitude, longitude });
 
                         try {
-                            const response = await axios.post("http://localhost:8000/api/RAdduseraddress/getlivelocation", {
+                            const response = await axios.post(`${API_BASE_URL}/RAdduseraddress/getlivelocation`, {
                                 lat: latitude,
                                 lng: longitude,
                             }, {

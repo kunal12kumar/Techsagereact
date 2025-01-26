@@ -46,6 +46,7 @@ export default function SignIn() {
 
   const handelSubmit = async (event) => {
     event.preventDefault();
+    const API_BASE_URL = process.env.REACT_APP_API_URL
 
 
 
@@ -65,7 +66,8 @@ export default function SignIn() {
 
     // now calling the api to send the otp and verifying the user to save into the database
     try {
-      const response = await axios.post('http://localhost:8000/api/Rsigninuser/usersignin', {
+      
+      const response = await axios.post(`${API_BASE_URL}/Rsigninuser/usersignin`, {
 
         email: userdata.email,
 
